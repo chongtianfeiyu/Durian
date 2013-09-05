@@ -1,0 +1,20 @@
+<View sceneWidth="960" sceneHeight="640" sceneColor="0xffffff" sceneBg="" layers="1,1,0,0,第 1 层">
+  <Image url="png.component.bg" x="14" y="5" layer="1"/>
+  <Image url="png.component.blank" x="145" y="22" layer="1"/>
+  <Button skin="png.component.btn_close" x="143" y="45" layer="1"/>
+  <Button label="label" skin="png.component.button" x="137" y="88" layer="1"/>
+  <CheckBox label="label" skin="png.component.checkbox" x="225" y="29" layer="1"/>
+  <Clip url="png.component.clip_num" x="54" y="140" layer="1" clipWidth="24" clipHeight="27" clipX="9" clipY="0" frame="2" interval="200" autoPlay="true"/>
+  <ComboBox labels="label1,label2" skin="png.component.combobox" x="143" y="135" layer="1"/>
+  <HScrollBar skin="png.component.hscroll" x="35" y="204" layer="1"/>
+  <HSlider skin="png.component.hslider" x="155" y="212" layer="1"/>
+  <Label text="label" x="34" y="255" layer="1"/>
+  <LinkButton label="label" x="138" y="257" layer="1"/>
+  <ProgressBar skin="png.component.progress" x="35" y="298" layer="1"/>
+  <RadioButton label="label" skin="png.component.radio" x="125" y="326" layer="1"/>
+  <RadioGroup labels="label1,label2" skin="png.component.radiogroup" x="46" y="372" layer="1"/>
+  <Tab labels="label1,label2" skin="png.component.tab" x="22" y="416" layer="1"/>
+  <TextArea text="TextArea" skin="png.component.textarea" x="340" y="135" layer="1"/>
+  <TextInput text="TextInput" skin="png.component.textinput" x="271" y="75" layer="1"/>
+  <VScrollBar skin="png.component.vscroll" x="285" y="180" layer="1"/>
+</View>

@@ -1,0 +1,15 @@
+package durian.actSpr.structs.acth
+{
+    public class ActAll
+    {
+        public var ah:ActHeader;
+        public var aa:Vector.<AnyAction>;
+        public var numOfSound:int;
+        public var buf:Vector.<String>;
+        public var xxx:Vector.<Number>; //float //animate speed.
+        
+        public function ActAll()
+        {
+        }
+    }
+}
