@@ -40,7 +40,7 @@ package
         {
             super.onContextInitialized();
             
-            App.loader.loadAssets( ["assets/component.swf"] , new Handler( onLoadComplete ) );
+            App.loader.loadAssets( ["assets/component.swf" ] , new Handler( onLoadComplete ) );
         }
         
         protected function onLoadComplete():void
@@ -53,21 +53,16 @@ package
             
             var assetList:Array = [];
             assetList.push( {url: ResTable.MONSTER_PORING_ACT, type:ResLoader.BYTE} );
-            assetList.push( {url: ResTable.MONSTER_PORING_TPC, type:ResLoader.BYTE} );
+            assetList.push( {url: ResTable.MONSTER_TEXTURE_001, type:ResLoader.BYTE} );
+            assetList.push( {url: ResTable.MONSTER_ATLASXML_001, type:ResLoader.TXT} );
             App.loader.loadAssets( assetList , new Handler( onAssetLoaded ) );
         }
         
         protected function onAssetLoaded():void
         {
-            var data:ByteArray = App.loader.getResLoaded( ResTable.MONSTER_PORING_TPC );
-            data.inflate();
-            var len:int = data.readByte();
-            len = data.readUnsignedInt();
-            var textureData:ByteArray = new ByteArray();
-            data.readBytes( textureData , 0,  len );
-            len = data.readUnsignedInt();
-            var atlasXml:XML = XML( decodeURI( data.readUTFBytes( len ) ) );
-            textureMgr.getTextureAtlas( ResTable.MONSTER_PORING_TPC , textureData , atlasXml , onActTpcReady );
+            var data:ByteArray = App.loader.getResLoaded( ResTable.MONSTER_TEXTURE_001 );
+            var atlasXml:XML = XML( App.loader.getResLoaded( ResTable.MONSTER_ATLASXML_001 ) );
+            textureMgr.getTextureAtlas( ResTable.MONSTER_TEXTURE_001 , data , atlasXml , onActTpcReady );
         }
         
         private function onActTpcReady( textureAtlas:TextureAtlas ):void
@@ -77,19 +72,28 @@ package
             var cact:CACT = new CACT( App.loader.getResLoaded( ResTable.MONSTER_PORING_ACT ) );
             
             var count:int = 0;
-            while( count<250)
+            while( count < 300 )
             {
-                newActTpcView( cact , ResTable.MONSTER_PORING_TPC , textureAtlas );
+                newActTpcView( cact , ResTable.MONSTER_TEXTURE_001 , textureAtlas );
                 count++;
             }
         }
         
         private function newActTpcView( cact:CACT , resId:String , textureAtlas:TextureAtlas ):ActTpcView
         {
-            var viewObj:ActTpcView = new ActTpcView();
+            var monsterName:String = "poring_";
+            monsterName = Math.random() > 0.5 ? "poporing_" : monsterName;
+            monsterName = Math.random() > 0.6 ? "goldporing_" : monsterName;
+            monsterName = Math.random() > 0.7 ? "em_deviling_" : monsterName;
+            monsterName = Math.random() > 0.8 ? "heavy_metaling_" : monsterName;
+            monsterName = Math.random() > 0.9 ? "magmaring_" : monsterName;
+            monsterName = Math.random() > 0.9 ? "metaling_" : monsterName;
+            monsterName = Math.random() > 0.9 ? "pouring_" : monsterName;
+            
+            var viewObj:ActTpcView = new ActTpcView( monsterName );
             viewObj.initAct( cact );
             viewObj.initTpc( resId , textureAtlas );
-            viewObj.counterTargetRate = 0.075;
+            viewObj.counterTargetRate = 0.15;
             viewObj.loop = true;
             viewObj.actionIndex = 8;
             _starlingMain.addChild( viewObj );
@@ -106,8 +110,8 @@ package
                 var i:int = 0;
                 while( i < _viewList.length )
                 {
-                    _viewList[i].x = 50 + ( i % 25 ) * 35;
-                    _viewList[i].y = 50 + int( i / 25 ) * 55;
+                    _viewList[i].x = 50 + ( i % 25 ) * 30;
+                    _viewList[i].y = 50 + int( i / 25 ) * 30;
                     _viewList[i].tick( delta );
                     i++;
                 }

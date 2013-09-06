@@ -4,9 +4,9 @@ package durian.actTpc
 
     public class ActTpcBodyView extends ActTpcView
     {
-        public function ActTpcBodyView()
+        public function ActTpcBodyView( name:String )
         {
-            super();
+            super( name );
         }
         
         override public function updateFrame():void

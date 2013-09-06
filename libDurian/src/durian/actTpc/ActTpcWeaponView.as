@@ -7,9 +7,9 @@ package durian.actTpc
 
     public class ActTpcWeaponView extends ActTpcOtherView
     {
-        public function ActTpcWeaponView(bodyView:ActTpcBodyView)
+        public function ActTpcWeaponView( name:String , bodyView:ActTpcBodyView )
         {
-            super(bodyView);
+            super( name , bodyView );
         }
         
         override public function tick(delta:Number):void
@@ -47,7 +47,7 @@ package durian.actTpc
             }
             if( apsv as AnyPatSprV0101 && apsv.sprNo != 0xffffffff )
             {
-                var mTexture:Texture = _textureAtlas.getTexture( apsv.sprNo.toString() );
+                var mTexture:Texture = _textureList[ apsv.sprNo ];
                 if( mTexture )
                 {
                     _animationDisplay.texture = mTexture ;

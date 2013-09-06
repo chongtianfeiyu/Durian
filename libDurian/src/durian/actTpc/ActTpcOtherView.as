@@ -1,8 +1,6 @@
 package durian.actTpc
 {
     import durian.actSpr.structs.acth.AnyPatSprV0101;
-    import durian.actTpc.ActTpcBodyView;
-    import durian.actTpc.ActTpcView;
     
     import starling.textures.Texture;
     
@@ -11,9 +9,9 @@ package durian.actTpc
     {
         private var _bodyView:ActTpcBodyView;
         
-        public function ActTpcOtherView( bodyView:ActTpcBodyView )
+        public function ActTpcOtherView( name:String , bodyView:ActTpcBodyView )
         {
-            super();
+            super( name );
             _bodyView = bodyView;
         }
         
@@ -51,7 +49,7 @@ package durian.actTpc
             }
             if( apsv as AnyPatSprV0101 && apsv.sprNo != 0xffffffff )
             {
-                var mTexture:Texture = _textureAtlas.getTexture( apsv.sprNo.toString() );
+                var mTexture:Texture = _textureList[ apsv.sprNo ];
                 if( mTexture )
                 {
                     _animationDisplay.texture = mTexture ;

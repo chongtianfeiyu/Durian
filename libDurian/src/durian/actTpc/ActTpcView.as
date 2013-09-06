@@ -19,7 +19,8 @@ package durian.actTpc
         protected static const NULL_TEXTURE:Texture = Texture.fromBitmapData(new BitmapData(1,1,true,0));
         
         protected var _act:CACT;
-        protected var _textureAtlas:TextureAtlas;
+        protected var _textureList:Vector.<Texture>;
+//        protected var _textureAtlas:TextureAtlas;
         
         protected var _actionIndex:uint;
         protected var _currentFrame:uint;
@@ -35,17 +36,16 @@ package durian.actTpc
         protected var _currentTargetRate:Number;
         protected var _loop:Boolean;
         
-        public function get textureAtlas():TextureAtlas
-        {
-            return _textureAtlas;
-        }
+        protected var _name:String;
+        
         public function get texture():Texture
         {
             return _animationDisplay.texture;
         }
         
-        public function ActTpcView()
+        public function ActTpcView( name:String )
         {
+            _name = name;
             _counter = new Counter();
             _baseCounterTarget = 0.075 ;
             _counterTarget = _baseCounterTarget;
@@ -113,14 +113,26 @@ package durian.actTpc
         public function initTpc( resId:String , textureAtlas:TextureAtlas ):void
         {
             _couldTick = false;
-            _textureAtlas = textureAtlas;
-            onInited( _textureAtlas );
+            _textureList = new Vector.<Texture>();
+            var textureTmp:Texture;
+            
+            for( var i:int = 0;i<int.MAX_VALUE;i++)
+            {
+                textureTmp = textureAtlas.getTexture( _name + ( i >= 10 ? "":"0") + i );
+                if( textureTmp )
+                {
+                    _textureList[i] = textureTmp;
+                }
+                else 
+                {
+                    break;
+                }
+            }
+            onInited();
         }
         
-        protected function onInited( textureAtlas:TextureAtlas = null ):void
+        protected function onInited():void
         {
-            _textureAtlas = textureAtlas;
-            
             actionIndex = 0;
             currentFrame = 0;
             _counter.initialize();
@@ -176,7 +188,6 @@ package durian.actTpc
         
         public function updateFrame():void
         {
-            //            RoGlobal.debugTxt.appendText( "updateFrame" + _animationDisplay.x + _animationDisplay.y + "\n" );
             _currentAaap = _act.aall.aa[_actionIndex].aaap[_currentFrame];
             
             var isExt:Boolean = false;
@@ -199,30 +210,33 @@ package durian.actTpc
             }
             if( apsv as AnyPatSprV0101 && apsv.sprNo != 0xffffffff )
             {
-                var mTexture:Texture = _textureAtlas.getTexture( apsv.sprNo.toString() );
-                if( mTexture )
+                var mTexture:Texture = _textureList[ apsv.sprNo ];
+                if( mTexture && _animationDisplay.texture != mTexture )
                 {
                     _animationDisplay.texture = mTexture ;
+                    if( apsv.mirrorOn == 0 )
+                    {
+                        _animationDisplay.x = int(-_animationDisplay.texture.width / 2 + apsv.xOffs);
+                        _animationDisplay.y = int(-_animationDisplay.texture.height / 2 + apsv.yOffs);
+                        _animationDisplay.scaleX = 1;
+                    }
+                    else
+                    {
+                        _animationDisplay.x = int(_animationDisplay.texture.width / 2 + apsv.xOffs);
+                        _animationDisplay.y = int(-_animationDisplay.texture.height / 2 + apsv.yOffs);
+                        _animationDisplay.scaleX = -1;
+                    }
+                    _animationDisplay.readjustSize();
                 }
-                if( apsv.mirrorOn == 0 )
-                {
-                    _animationDisplay.x = int(-_animationDisplay.texture.width / 2 + apsv.xOffs);
-                    _animationDisplay.y = int(-_animationDisplay.texture.height / 2 + apsv.yOffs);
-                    _animationDisplay.scaleX = 1;
-                }
-                else
-                {
-                    _animationDisplay.x = int(_animationDisplay.texture.width / 2 + apsv.xOffs);
-                    _animationDisplay.y = int(-_animationDisplay.texture.height / 2 + apsv.yOffs);
-                    _animationDisplay.scaleX = -1;
-                }
-                _animationDisplay.readjustSize();
             }
         }
         
         protected function distruct():void
         {
-            _textureAtlas.dispose();
+            while(_textureList.length)
+            {
+                _textureList.splice( 0 , 1 );
+            }
             _animationDisplay.removeFromParent(true);
             _animationDisplay = null;
             _couldTick = false;

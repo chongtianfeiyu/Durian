@@ -2,9 +2,9 @@ package durian.actTpc
 {
     public class ActTpcPlayerView extends ActTpcBodyView
     {
-        public function ActTpcPlayerView()
+        public function ActTpcPlayerView( name:String )
         {
-            super();
+            super( name );
         }
         
         override public function tick(delta:Number):void

@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:0f682d89349f395ee8722a1cb65aa7e9$ -->
+<TextureAtlas imagePath="001.png">
+    <SubTexture name="archangeling_00" x="612" y="397" width="37" height="36"/>
+    <SubTexture name="archangeling_01" x="508" y="480" width="39" height="37"/>
+    <SubTexture name="archangeling_02" x="425" y="567" width="41" height="39"/>
+    <SubTexture name="archangeling_03" x="733" y="580" width="39" height="33"/>
+    <SubTexture name="archangeling_04" x="607" y="437" width="37" height="36"/>
+    <SubTexture name="archangeling_05" x="468" y="521" width="39" height="37"/>
+    <SubTexture name="archangeling_06" x="425" y="526" width="41" height="39"/>
+    <SubTexture name="archangeling_07" x="750" y="462" width="39" height="33"/>
+    <SubTexture name="archangeling_08" x="684" y="63" width="37" height="31"/>
+    <SubTexture name="archangeling_09" x="929" y="386" width="39" height="30"/>
+    <SubTexture name="archangeling_10" x="975" y="342" width="41" height="30"/>
+    <SubTexture name="archangeling_11" x="766" y="261" width="35" height="31"/>
+    <SubTexture name="archangeling_12" x="671" y="812" width="34" height="34"/>
+    <SubTexture name="archangeling_13" x="760" y="96" width="36" height="31"/>
+    <SubTexture name="archangeling_14" x="682" y="104" width="37" height="31"/>
+    <SubTexture name="archangeling_15" x="746" y="228" width="35" height="31"/>
+    <SubTexture name="archangeling_16" x="666" y="137" width="37" height="31"/>
+    <SubTexture name="archangeling_17" x="929" y="354" width="39" height="30"/>
+    <SubTexture name="archangeling_18" x="975" y="310" width="41" height="30"/>
+    <SubTexture name="archangeling_19" x="729" y="261" width="35" height="31"/>
+    <SubTexture name="archangeling_20" x="721" y="627" width="34" height="34"/>
+    <SubTexture name="archangeling_21" x="744" y="129" width="36" height="31"/>
+    <SubTexture name="archangeling_22" x="781" y="385" width="37" height="31"/>
+    <SubTexture name="archangeling_23" x="709" y="228" width="35" height="31"/>
+    <SubTexture name="archangeling_24" x="602" y="479" width="37" height="36"/>
+    <SubTexture name="archangeling_25" x="809" y="943" width="39" height="32"/>
+    <SubTexture name="archangeling_26" x="310" y="480" width="62" height="48"/>
+    <SubTexture name="archangeling_27" x="172" y="112" width="80" height="66"/>
+    <SubTexture name="archangeling_28" x="89" y="637" width="85" height="65"/>
+    <SubTexture name="archangeling_29" x="936" y="664" width="84" height="28"/>
+    <SubTexture name="archangeling_30" x="607" y="437" width="37" height="36"/>
+    <SubTexture name="archangeling_31" x="879" y="497" width="38" height="31"/>
+    <SubTexture name="archangeling_32" x="297" y="561" width="62" height="48"/>
+    <SubTexture name="archangeling_33" x="89" y="834" width="80" height="63"/>
+    <SubTexture name="archangeling_34" x="2" y="905" width="85" height="65"/>
+    <SubTexture name="archangeling_35" x="936" y="634" width="84" height="28"/>
+    <SubTexture name="archangeling_36" x="919" y="497" width="8" height="23" frameX="-1" frameY="-1" frameWidth="10" frameHeight="25"/>
+    <SubTexture name="archangeling_37" x="610" y="43" width="17" height="18" frameX="-1" frameY="-1" frameWidth="19" frameHeight="20"/>
+    <SubTexture name="archangeling_38" x="610" y="894" width="18" height="17" frameX="-1" frameY="-1" frameWidth="20" frameHeight="19"/>
+    <SubTexture name="archangeling_39" x="779" y="978" width="11" height="13" frameX="-1" frameY="-1" frameWidth="13" frameHeight="15"/>
+    <SubTexture name="archangeling_40" x="413" y="659" width="27" height="19" frameX="-1" frameY="-1" frameWidth="29" frameHeight="21"/>
+    <SubTexture name="archangeling_41" x="512" y="256" width="14" height="19" frameX="-1" frameY="-1" frameWidth="16" frameHeight="21"/>
+    <SubTexture name="archangeling_42" x="496" y="256" width="14" height="19" frameX="-1" frameY="-1" frameWidth="16" frameHeight="21"/>
+    <SubTexture name="archangeling_43" x="444" y="256" width="18" height="19" frameX="-1" frameY="-1" frameWidth="20" frameHeight="21"/>
+    <SubTexture name="archangeling_44" x="365" y="798" width="15" height="21" frameX="-1" frameY="-1" frameWidth="17" frameHeight="23"/>
+    <SubTexture name="archangeling_45" x="150" y="279" width="26" height="8" frameX="-1" frameY="-1" frameWidth="28" frameHeight="10"/>
+    <SubTexture name="archangeling_46" x="424" y="256" width="18" height="19" frameX="-1" frameY="-1" frameWidth="20" frameHeight="21"/>
+    <SubTexture name="archangeling_47" x="348" y="798" width="15" height="21" frameX="-1" frameY="-1" frameWidth="17" frameHeight="23"/>
+    <SubTexture name="archangeling_48" x="480" y="256" width="14" height="19" frameX="-1" frameY="-1" frameWidth="16" frameHeight="21"/>
+    <SubTexture name="archangeling_49" x="464" y="256" width="14" height="19" frameX="-1" frameY="-1" frameWidth="16" frameHeight="21"/>
+    <SubTexture name="drops_00" x="509" y="557" width="37" height="36"/>
+    <SubTexture name="drops_01" x="531" y="758" width="39" height="37"/>
+    <SubTexture name="drops_02" x="619" y="2" width="41" height="39"/>
+    <SubTexture name="drops_03" x="757" y="738" width="39" height="33"/>
+    <SubTexture name="drops_04" x="611" y="276" width="37" height="36"/>
+    <SubTexture name="drops_05" x="516" y="719" width="39" height="37"/>
+    <SubTexture name="drops_06" x="598" y="63" width="41" height="39"/>
+    <SubTexture name="drops_07" x="785" y="811" width="39" height="33"/>
+    <SubTexture name="drops_08" x="752" y="352" width="37" height="31"/>
+    <SubTexture name="drops_09" x="929" y="98" width="39" height="30"/>
+    <SubTexture name="drops_10" x="379" y="179" width="41" height="30"/>
+    <SubTexture name="drops_11" x="856" y="68" width="35" height="31"/>
+    <SubTexture name="drops_12" x="681" y="668" width="34" height="34"/>
+    <SubTexture name="drops_13" x="705" y="2" width="36" height="31"/>
+    <SubTexture name="drops_14" x="742" y="385" width="37" height="31"/>
+    <SubTexture name="drops_15" x="817" y="35" width="35" height="31"/>
+    <SubTexture name="drops_16" x="918" y="868" width="37" height="31"/>
+    <SubTexture name="drops_17" x="929" y="66" width="39" height="30"/>
+    <SubTexture name="drops_18" x="336" y="179" width="41" height="30"/>
+    <SubTexture name="drops_19" x="856" y="35" width="35" height="31"/>
+    <SubTexture name="drops_20" x="685" y="743" width="34" height="34"/>
+    <SubTexture name="drops_21" x="818" y="418" width="36" height="31"/>
+    <SubTexture name="drops_22" x="897" y="835" width="37" height="31"/>
+    <SubTexture name="drops_23" x="819" y="2" width="35" height="31"/>
+    <SubTexture name="drops_24" x="509" y="557" width="37" height="36"/>
+    <SubTexture name="drops_25" x="727" y="944" width="39" height="32"/>
+    <SubTexture name="drops_26" x="218" y="769" width="62" height="48"/>
+    <SubTexture name="drops_27" x="140" y="211" width="80" height="66"/>
+    <SubTexture name="drops_28" x="86" y="362" width="85" height="65"/>
+    <SubTexture name="drops_29" x="665" y="782" width="84" height="28"/>
+    <SubTexture name="drops_30" x="611" y="276" width="37" height="36"/>
+    <SubTexture name="drops_31" x="839" y="497" width="38" height="31"/>
+    <SubTexture name="drops_32" x="214" y="872" width="62" height="48"/>
+    <SubTexture name="drops_33" x="490" y="2" width="80" height="63"/>
+    <SubTexture name="drops_34" x="44" y="501" width="85" height="65"/>
+    <SubTexture name="drops_35" x="681" y="993" width="84" height="28"/>
+    <SubTexture name="drops_36" x="304" y="536" width="8" height="23" frameX="-1" frameY="-1" frameWidth="10" frameHeight="25"/>
+    <SubTexture name="drops_37" x="579" y="256" width="17" height="18" frameX="-1" frameY="-1" frameWidth="19" frameHeight="20"/>
+    <SubTexture name="drops_38" x="530" y="897" width="18" height="17" frameX="-1" frameY="-1" frameWidth="20" frameHeight="19"/>
+    <SubTexture name="drops_39" x="637" y="256" width="11" height="13" frameX="-1" frameY="-1" frameWidth="13" frameHeight="15"/>
+    <SubTexture name="drops_40" x="253" y="748" width="27" height="19" frameX="-1" frameY="-1" frameWidth="29" frameHeight="21"/>
+    <SubTexture name="drops_41" x="275" y="616" width="20" height="14"/>
+    <SubTexture name="drops_42" x="482" y="798" width="19" height="17"/>
+    <SubTexture name="drops_43" x="603" y="317" width="37" height="36"/>
+    <SubTexture name="drops_44" x="250" y="616" width="23" height="15"/>
+    <SubTexture name="drops_45" x="314" y="530" width="33" height="29"/>
+    <SubTexture name="drops_46" x="827" y="842" width="33" height="32"/>
+    <SubTexture name="drops_47" x="957" y="847" width="12" height="25" frameX="-1" frameY="-1" frameWidth="14" frameHeight="27"/>
+    <SubTexture name="drops_48" x="773" y="883" width="23" height="24" frameX="-1" frameY="-1" frameWidth="25" frameHeight="26"/>
+    <SubTexture name="em_deviling_00" x="789" y="650" width="37" height="33" frameX="-1" frameY="-1" frameWidth="39" frameHeight="35"/>
+    <SubTexture name="em_deviling_01" x="828" y="530" width="39" height="31" frameX="-1" frameY="-1" frameWidth="41" frameHeight="33"/>
+    <SubTexture name="em_deviling_02" x="496" y="365" width="41" height="32" frameX="-1" frameY="-1" frameWidth="43" frameHeight="34"/>
+    <SubTexture name="em_deviling_03" x="675" y="509" width="39" height="34" frameX="-1" frameY="-1" frameWidth="41" frameHeight="36"/>
+    <SubTexture name="em_deviling_04" x="665" y="555" width="40" height="34" frameX="-1" frameY="-1" frameWidth="42" frameHeight="36"/>
+    <SubTexture name="em_deviling_05" x="929" y="194" width="39" height="30" frameX="-1" frameY="-1" frameWidth="41" frameHeight="32"/>
+    <SubTexture name="em_deviling_06" x="853" y="992" width="41" height="30" frameX="-1" frameY="-1" frameWidth="43" frameHeight="32"/>
+    <SubTexture name="em_deviling_07" x="929" y="162" width="39" height="30" frameX="-1" frameY="-1" frameWidth="41" frameHeight="32"/>
+    <SubTexture name="em_deviling_08" x="789" y="532" width="37" height="33" frameX="-1" frameY="-1" frameWidth="39" frameHeight="35"/>
+    <SubTexture name="em_deviling_09" x="798" y="497" width="39" height="31" frameX="-1" frameY="-1" frameWidth="41" frameHeight="33"/>
+    <SubTexture name="em_deviling_10" x="382" y="527" width="41" height="32" frameX="-1" frameY="-1" frameWidth="43" frameHeight="34"/>
+    <SubTexture name="em_deviling_11" x="794" y="773" width="39" height="33" frameX="-1" frameY="-1" frameWidth="41" frameHeight="35"/>
+    <SubTexture name="em_deviling_12" x="655" y="594" width="40" height="34" frameX="-1" frameY="-1" frameWidth="42" frameHeight="36"/>
+    <SubTexture name="em_deviling_13" x="256" y="180" width="39" height="29" frameX="-1" frameY="-1" frameWidth="41" frameHeight="31"/>
+    <SubTexture name="em_deviling_14" x="88" y="180" width="41" height="29" frameX="-1" frameY="-1" frameWidth="43" frameHeight="31"/>
+    <SubTexture name="em_deviling_15" x="215" y="180" width="39" height="29" frameX="-1" frameY="-1" frameWidth="41" frameHeight="31"/>
+    <SubTexture name="em_deviling_16" x="650" y="278" width="39" height="31" frameX="-1" frameY="-1" frameWidth="41" frameHeight="33"/>
+    <SubTexture name="em_deviling_17" x="453" y="367" width="41" height="30" frameX="-1" frameY="-1" frameWidth="43" frameHeight="32"/>
+    <SubTexture name="em_deviling_18" x="798" y="608" width="35" height="33" frameX="-1" frameY="-1" frameWidth="37" frameHeight="35"/>
+    <SubTexture name="em_deviling_19" x="640" y="517" width="33" height="36" frameX="-1" frameY="-1" frameWidth="35" frameHeight="38"/>
+    <SubTexture name="em_deviling_20" x="826" y="808" width="35" height="32" frameX="-1" frameY="-1" frameWidth="37" frameHeight="34"/>
+    <SubTexture name="em_deviling_21" x="666" y="182" width="39" height="31" frameX="-1" frameY="-1" frameWidth="41" frameHeight="33"/>
+    <SubTexture name="em_deviling_22" x="422" y="179" width="41" height="30" frameX="-1" frameY="-1" frameWidth="43" frameHeight="32"/>
+    <SubTexture name="em_deviling_23" x="850" y="943" width="35" height="32" frameX="-1" frameY="-1" frameWidth="37" frameHeight="34"/>
+    <SubTexture name="em_deviling_24" x="707" y="812" width="33" height="34" frameX="-1" frameY="-1" frameWidth="35" frameHeight="36"/>
+    <SubTexture name="em_deviling_25" x="799" y="68" width="35" height="31" frameX="-1" frameY="-1" frameWidth="37" frameHeight="33"/>
+    <SubTexture name="em_deviling_26" x="601" y="915" width="45" height="37" frameX="-1" frameY="-1" frameWidth="47" frameHeight="39"/>
+    <SubTexture name="em_deviling_27" x="670" y="472" width="39" height="35" frameX="-1" frameY="-1" frameWidth="41" frameHeight="37"/>
+    <SubTexture name="em_deviling_28" x="367" y="682" width="17" height="14" frameX="-1" frameY="-1" frameWidth="19" frameHeight="16"/>
+    <SubTexture name="em_deviling_29" x="348" y="682" width="17" height="14" frameX="-1" frameY="-1" frameWidth="19" frameHeight="16"/>
+    <SubTexture name="em_deviling_30" x="97" y="279" width="19" height="11" frameX="-1" frameY="-1" frameWidth="21" frameHeight="13"/>
+    <SubTexture name="em_deviling_31" x="134" y="279" width="14" height="11" frameX="-1" frameY="-1" frameWidth="16" frameHeight="13"/>
+    <SubTexture name="em_deviling_32" x="103" y="98" width="13" height="11" frameX="-1" frameY="-1" frameWidth="15" frameHeight="13"/>
+    <SubTexture name="em_deviling_33" x="178" y="279" width="13" height="8" frameX="-1" frameY="-1" frameWidth="15" frameHeight="10"/>
+    <SubTexture name="em_deviling_34" x="367" y="682" width="17" height="14" frameX="-1" frameY="-1" frameWidth="19" frameHeight="16"/>
+    <SubTexture name="em_deviling_35" x="56" y="279" width="15" height="12" frameX="-1" frameY="-1" frameWidth="17" frameHeight="14"/>
+    <SubTexture name="em_deviling_36" x="329" y="682" width="17" height="14" frameX="-1" frameY="-1" frameWidth="19" frameHeight="16"/>
+    <SubTexture name="em_deviling_37" x="118" y="279" width="14" height="11" frameX="-1" frameY="-1" frameWidth="16" frameHeight="13"/>
+    <SubTexture name="em_deviling_38" x="86" y="98" width="15" height="12" frameX="-1" frameY="-1" frameWidth="17" frameHeight="14"/>
+    <SubTexture name="em_deviling_39" x="144" y="98" width="15" height="9" frameX="-1" frameY="-1" frameWidth="17" frameHeight="11"/>
+    <SubTexture name="em_deviling_40" x="232" y="964" width="62" height="48"/>
+    <SubTexture name="em_deviling_41" x="155" y="2" width="80" height="66"/>
+    <SubTexture name="em_deviling_42" x="139" y="292" width="85" height="65"/>
+    <SubTexture name="em_deviling_43" x="767" y="993" width="84" height="28"/>
+    <SubTexture name="em_deviling_44" x="929" y="130" width="39" height="30" frameX="-1" frameY="-1" frameWidth="41" frameHeight="32"/>
+    <SubTexture name="em_deviling_45" x="640" y="517" width="33" height="36" frameX="-1" frameY="-1" frameWidth="35" frameHeight="38"/>
+    <SubTexture name="em_deviling_46" x="598" y="256" width="17" height="18" frameX="-1" frameY="-1" frameWidth="19" frameHeight="20"/>
+    <SubTexture name="em_deviling_47" x="420" y="798" width="8" height="20" frameX="-1" frameY="-1" frameWidth="10" frameHeight="22"/>
+    <SubTexture name="em_deviling_48" x="727" y="978" width="11" height="13" frameX="-1" frameY="-1" frameWidth="13" frameHeight="15"/>
+    <SubTexture name="em_deviling_49" x="297" y="611" width="27" height="19" frameX="-1" frameY="-1" frameWidth="29" frameHeight="21"/>
+    <SubTexture name="em_deviling_50" x="317" y="798" width="19" height="22" frameX="-1" frameY="-1" frameWidth="21" frameHeight="24"/>
+    <SubTexture name="em_deviling_51" x="193" y="279" width="12" height="7" frameX="-1" frameY="-1" frameWidth="14" frameHeight="9"/>
+    <SubTexture name="ghostring_00" x="463" y="963" width="37" height="47"/>
+    <SubTexture name="ghostring_01" x="401" y="277" width="39" height="43"/>
+    <SubTexture name="ghostring_02" x="434" y="399" width="40" height="43"/>
+    <SubTexture name="ghostring_03" x="413" y="611" width="39" height="46"/>
+    <SubTexture name="ghostring_04" x="424" y="963" width="37" height="47"/>
+    <SubTexture name="ghostring_05" x="470" y="869" width="37" height="47"/>
+    <SubTexture name="ghostring_06" x="395" y="211" width="39" height="43"/>
+    <SubTexture name="ghostring_07" x="472" y="918" width="40" height="43"/>
+    <SubTexture name="ghostring_08" x="502" y="963" width="39" height="46"/>
+    <SubTexture name="ghostring_09" x="431" y="869" width="37" height="47"/>
+    <SubTexture name="ghostring_10" x="383" y="399" width="49" height="44"/>
+    <SubTexture name="ghostring_11" x="282" y="748" width="62" height="48"/>
+    <SubTexture name="ghostring_12" x="648" y="43" width="17" height="18"/>
+    <SubTexture name="ghostring_13" x="625" y="794" width="18" height="17"/>
+    <SubTexture name="ghostring_14" x="346" y="378" width="27" height="19"/>
+    <SubTexture name="ghostring_15" x="818" y="977" width="11" height="13"/>
+    <SubTexture name="ghostring_16" x="839" y="743" width="8" height="23"/>
+    <SubTexture name="ghostring_17" x="543" y="179" width="47" height="39"/>
+    <SubTexture name="ghostring_18" x="629" y="43" width="17" height="18"/>
+    <SubTexture name="ghostring_19" x="886" y="563" width="12" height="28"/>
+    <SubTexture name="ghostring_20" x="630" y="894" width="18" height="17"/>
+    <SubTexture name="ghostring_21" x="805" y="978" width="11" height="13"/>
+    <SubTexture name="ghostring_22" x="792" y="978" width="11" height="13"/>
+    <SubTexture name="ghostring_23" x="485" y="67" width="64" height="43"/>
+    <SubTexture name="ghostring_24" x="419" y="67" width="64" height="43"/>
+    <SubTexture name="goldporing_00" x="601" y="518" width="37" height="36"/>
+    <SubTexture name="goldporing_01" x="686" y="952" width="39" height="37"/>
+    <SubTexture name="goldporing_02" x="662" y="2" width="41" height="39"/>
+    <SubTexture name="goldporing_03" x="716" y="503" width="39" height="33"/>
+    <SubTexture name="goldporing_04" x="587" y="556" width="37" height="36"/>
+    <SubTexture name="goldporing_05" x="648" y="913" width="39" height="37"/>
+    <SubTexture name="goldporing_06" x="641" y="63" width="41" height="39"/>
+    <SubTexture name="goldporing_07" x="707" y="545" width="39" height="33"/>
+    <SubTexture name="goldporing_08" x="779" y="418" width="37" height="31"/>
+    <SubTexture name="goldporing_09" x="929" y="322" width="39" height="30"/>
+    <SubTexture name="goldporing_10" x="975" y="278" width="41" height="30"/>
+    <SubTexture name="goldporing_11" x="745" y="195" width="35" height="31"/>
+    <SubTexture name="goldporing_12" x="697" y="591" width="34" height="34"/>
+    <SubTexture name="goldporing_13" x="707" y="170" width="36" height="31"/>
+    <SubTexture name="goldporing_14" x="975" y="941" width="37" height="31"/>
+    <SubTexture name="goldporing_15" x="791" y="167" width="35" height="31"/>
+    <SubTexture name="goldporing_16" x="975" y="908" width="37" height="31"/>
+    <SubTexture name="goldporing_17" x="929" y="290" width="39" height="30"/>
+    <SubTexture name="goldporing_18" x="975" y="246" width="41" height="30"/>
+    <SubTexture name="goldporing_19" x="856" y="167" width="35" height="31"/>
+    <SubTexture name="goldporing_20" x="717" y="666" width="34" height="34"/>
+    <SubTexture name="goldporing_21" x="671" y="215" width="36" height="31"/>
+    <SubTexture name="goldporing_22" x="975" y="847" width="37" height="31"/>
+    <SubTexture name="goldporing_23" x="745" y="162" width="35" height="31"/>
+    <SubTexture name="goldporing_24" x="577" y="595" width="37" height="36"/>
+    <SubTexture name="goldporing_25" x="769" y="909" width="39" height="32"/>
+    <SubTexture name="goldporing_26" x="285" y="632" width="62" height="48"/>
+    <SubTexture name="goldporing_27" x="237" y="2" width="80" height="66"/>
+    <SubTexture name="goldporing_28" x="2" y="838" width="85" height="65"/>
+    <SubTexture name="goldporing_29" x="936" y="604" width="84" height="28"/>
+    <SubTexture name="goldporing_30" x="587" y="556" width="37" height="36"/>
+    <SubTexture name="goldporing_31" x="869" y="530" width="38" height="31"/>
+    <SubTexture name="goldporing_32" x="253" y="698" width="62" height="48"/>
+    <SubTexture name="goldporing_33" x="89" y="769" width="80" height="63"/>
+    <SubTexture name="goldporing_34" x="2" y="771" width="85" height="65"/>
+    <SubTexture name="goldporing_35" x="936" y="574" width="84" height="28"/>
+    <SubTexture name="goldporing_36" x="730" y="884" width="8" height="23" frameX="-1" frameY="-1" frameWidth="10" frameHeight="25"/>
+    <SubTexture name="goldporing_37" x="605" y="797" width="18" height="17" frameX="-1" frameY="-1" frameWidth="20" frameHeight="19"/>
+    <SubTexture name="goldporing_38" x="503" y="798" width="19" height="17" frameX="-1" frameY="-1" frameWidth="21" frameHeight="19"/>
+    <SubTexture name="goldporing_39" x="85" y="279" width="10" height="12" frameX="-1" frameY="-1" frameWidth="12" frameHeight="14"/>
+    <SubTexture name="goldporing_40" x="456" y="798" width="24" height="17" frameX="-1" frameY="-1" frameWidth="26" frameHeight="19"/>
+    <SubTexture name="heavy_metaling_00" x="550" y="112" width="48" height="39" frameX="-1" frameY="-1" frameWidth="50" frameHeight="41"/>
+    <SubTexture name="heavy_metaling_01" x="543" y="956" width="50" height="37" frameX="-1" frameY="-1" frameWidth="52" frameHeight="39"/>
+    <SubTexture name="heavy_metaling_02" x="618" y="220" width="51" height="34" frameX="-1" frameY="-1" frameWidth="53" frameHeight="36"/>
+    <SubTexture name="heavy_metaling_03" x="651" y="393" width="50" height="35" frameX="-1" frameY="-1" frameWidth="52" frameHeight="37"/>
+    <SubTexture name="heavy_metaling_04" x="323" y="922" width="49" height="40" frameX="-1" frameY="-1" frameWidth="51" frameHeight="42"/>
+    <SubTexture name="heavy_metaling_05" x="554" y="441" width="51" height="36" frameX="-1" frameY="-1" frameWidth="53" frameHeight="38"/>
+    <SubTexture name="heavy_metaling_06" x="646" y="435" width="53" height="35" frameX="-1" frameY="-1" frameWidth="55" frameHeight="37"/>
+    <SubTexture name="heavy_metaling_07" x="549" y="480" width="51" height="36" frameX="-1" frameY="-1" frameWidth="53" frameHeight="38"/>
+    <SubTexture name="heavy_metaling_08" x="500" y="112" width="48" height="39" frameX="-1" frameY="-1" frameWidth="50" frameHeight="41"/>
+    <SubTexture name="heavy_metaling_09" x="550" y="857" width="50" height="37" frameX="-1" frameY="-1" frameWidth="52" frameHeight="39"/>
+    <SubTexture name="heavy_metaling_10" x="424" y="762" width="51" height="34" frameX="-1" frameY="-1" frameWidth="53" frameHeight="36"/>
+    <SubTexture name="heavy_metaling_11" x="539" y="359" width="48" height="38" frameX="-1" frameY="-1" frameWidth="50" frameHeight="40"/>
+    <SubTexture name="heavy_metaling_12" x="524" y="399" width="43" height="40" frameX="-1" frameY="-1" frameWidth="45" frameHeight="42"/>
+    <SubTexture name="heavy_metaling_13" x="507" y="817" width="47" height="38" frameX="-1" frameY="-1" frameWidth="49" frameHeight="40"/>
+    <SubTexture name="heavy_metaling_14" x="467" y="720" width="47" height="38" frameX="-1" frameY="-1" frameWidth="49" frameHeight="40"/>
+    <SubTexture name="heavy_metaling_15" x="467" y="680" width="47" height="38" frameX="-1" frameY="-1" frameWidth="49" frameHeight="40"/>
+    <SubTexture name="heavy_metaling_16" x="272" y="922" width="49" height="40" frameX="-1" frameY="-1" frameWidth="51" frameHeight="42"/>
+    <SubTexture name="heavy_metaling_17" x="477" y="760" width="52" height="36" frameX="-1" frameY="-1" frameWidth="54" frameHeight="38"/>
+    <SubTexture name="heavy_metaling_18" x="562" y="220" width="54" height="34" frameX="-1" frameY="-1" frameWidth="56" frameHeight="36"/>
+    <SubTexture name="heavy_metaling_19" x="171" y="924" width="48" height="38" frameX="-1" frameY="-1" frameWidth="50" frameHeight="40"/>
+    <SubTexture name="heavy_metaling_20" x="423" y="921" width="47" height="40" frameX="-1" frameY="-1" frameWidth="49" frameHeight="42"/>
+    <SubTexture name="heavy_metaling_21" x="561" y="276" width="48" height="39" frameX="-1" frameY="-1" frameWidth="50" frameHeight="41"/>
+    <SubTexture name="heavy_metaling_22" x="553" y="318" width="48" height="39" frameX="-1" frameY="-1" frameWidth="50" frameHeight="41"/>
+    <SubTexture name="heavy_metaling_23" x="503" y="318" width="48" height="39" frameX="-1" frameY="-1" frameWidth="50" frameHeight="41"/>
+    <SubTexture name="heavy_metaling_24" x="572" y="2" width="45" height="39" frameX="-1" frameY="-1" frameWidth="47" frameHeight="41"/>
+    <SubTexture name="heavy_metaling_25" x="221" y="922" width="49" height="40" frameX="-1" frameY="-1" frameWidth="51" frameHeight="42"/>
+    <SubTexture name="heavy_metaling_26" x="186" y="568" width="62" height="63"/>
+    <SubTexture name="heavy_metaling_27" x="88" y="112" width="82" height="66"/>
+    <SubTexture name="heavy_metaling_28" x="44" y="434" width="95" height="65"/>
+    <SubTexture name="heavy_metaling_29" x="465" y="220" width="95" height="34"/>
+    <SubTexture name="heavy_metaling_30" x="368" y="70" width="49" height="40" frameX="-1" frameY="-1" frameWidth="51" frameHeight="42"/>
+    <SubTexture name="heavy_metaling_31" x="317" y="70" width="49" height="40" frameX="-1" frameY="-1" frameWidth="51" frameHeight="42"/>
+    <SubTexture name="heavy_metaling_32" x="360" y="964" width="62" height="48"/>
+    <SubTexture name="heavy_metaling_33" x="89" y="704" width="80" height="63"/>
+    <SubTexture name="heavy_metaling_34" x="2" y="704" width="85" height="65"/>
+    <SubTexture name="heavy_metaling_35" x="936" y="544" width="84" height="28"/>
+    <SubTexture name="heavy_metaling_36" x="720" y="884" width="8" height="23" frameX="-1" frameY="-1" frameWidth="10" frameHeight="25"/>
+    <SubTexture name="heavy_metaling_37" x="401" y="798" width="17" height="20" frameX="-1" frameY="-1" frameWidth="19" frameHeight="22"/>
+    <SubTexture name="heavy_metaling_38" x="585" y="797" width="18" height="17" frameX="-1" frameY="-1" frameWidth="20" frameHeight="19"/>
+    <SubTexture name="heavy_metaling_39" x="766" y="978" width="11" height="13" frameX="-1" frameY="-1" frameWidth="13" frameHeight="15"/>
+    <SubTexture name="heavy_metaling_40" x="384" y="611" width="27" height="19" frameX="-1" frameY="-1" frameWidth="29" frameHeight="21"/>
+    <SubTexture name="lunatic_00" x="903" y="715" width="29" height="26" frameX="-1" frameY="-1" frameWidth="31" frameHeight="28"/>
+    <SubTexture name="lunatic_01" x="897" y="470" width="30" height="25" frameX="-1" frameY="-1" frameWidth="32" frameHeight="27"/>
+    <SubTexture name="lunatic_02" x="282" y="798" width="33" height="22" frameX="-1" frameY="-1" frameWidth="35" frameHeight="24"/>
+    <SubTexture name="lunatic_03" x="865" y="470" width="30" height="25" frameX="-1" frameY="-1" frameWidth="32" frameHeight="27"/>
+    <SubTexture name="lunatic_04" x="590" y="995" width="31" height="27" frameX="-1" frameY="-1" frameWidth="33" frameHeight="29"/>
+    <SubTexture name="lunatic_05" x="894" y="30" width="33" height="26" frameX="-1" frameY="-1" frameWidth="35" frameHeight="28"/>
+    <SubTexture name="lunatic_06" x="671" y="248" width="36" height="26" frameX="-1" frameY="-1" frameWidth="38" frameHeight="28"/>
+    <SubTexture name="lunatic_07" x="894" y="2" width="33" height="26" frameX="-1" frameY="-1" frameWidth="35" frameHeight="28"/>
+    <SubTexture name="lunatic_08" x="652" y="993" width="27" height="29" frameX="-1" frameY="-1" frameWidth="29" frameHeight="31"/>
+    <SubTexture name="lunatic_09" x="824" y="685" width="28" height="33" frameX="-1" frameY="-1" frameWidth="30" frameHeight="35"/>
+    <SubTexture name="lunatic_10" x="623" y="993" width="27" height="29" frameX="-1" frameY="-1" frameWidth="29" frameHeight="31"/>
+    <SubTexture name="lunatic_11" x="740" y="883" width="31" height="24" frameX="-1" frameY="-1" frameWidth="33" frameHeight="26"/>
+    <SubTexture name="lunatic_12" x="641" y="475" width="27" height="36" frameX="-1" frameY="-1" frameWidth="29" frameHeight="38"/>
+    <SubTexture name="lunatic_13" x="635" y="145" width="29" height="28" frameX="-1" frameY="-1" frameWidth="31" frameHeight="30"/>
+    <SubTexture name="lunatic_14" x="903" y="563" width="31" height="31" frameX="-1" frameY="-1" frameWidth="33" frameHeight="33"/>
+    <SubTexture name="lunatic_15" x="743" y="35" width="36" height="26" frameX="-1" frameY="-1" frameWidth="38" frameHeight="28"/>
+    <SubTexture name="lunatic_16" x="461" y="649" width="31" height="29" frameX="-1" frameY="-1" frameWidth="33" frameHeight="31"/>
+    <SubTexture name="lunatic_17" x="815" y="567" width="29" height="33" frameX="-1" frameY="-1" frameWidth="31" frameHeight="35"/>
+    <SubTexture name="lunatic_18" x="494" y="649" width="27" height="29" frameX="-1" frameY="-1" frameWidth="29" frameHeight="31"/>
+    <SubTexture name="lunatic_19" x="633" y="194" width="31" height="24" frameX="-1" frameY="-1" frameWidth="33" frameHeight="26"/>
+    <SubTexture name="lunatic_20" x="828" y="643" width="26" height="33" frameX="-1" frameY="-1" frameWidth="28" frameHeight="35"/>
+    <SubTexture name="lunatic_21" x="903" y="596" width="30" height="31" frameX="-1" frameY="-1" frameWidth="32" frameHeight="33"/>
+    <SubTexture name="lunatic_22" x="903" y="658" width="29" height="27" frameX="-1" frameY="-1" frameWidth="31" frameHeight="29"/>
+    <SubTexture name="lunatic_23" x="705" y="35" width="36" height="26" frameX="-1" frameY="-1" frameWidth="38" frameHeight="28"/>
+    <SubTexture name="lunatic_24" x="829" y="470" width="34" height="25" frameX="-1" frameY="-1" frameWidth="36" frameHeight="27"/>
+    <SubTexture name="lunatic_25" x="791" y="470" width="36" height="25" frameX="-1" frameY="-1" frameWidth="38" frameHeight="27"/>
+    <SubTexture name="lunatic_26" x="592" y="194" width="39" height="24" frameX="-1" frameY="-1" frameWidth="41" frameHeight="26"/>
+    <SubTexture name="lunatic_27" x="957" y="880" width="36" height="26" frameX="-1" frameY="-1" frameWidth="38" frameHeight="28"/>
+    <SubTexture name="lunatic_28" x="551" y="153" width="39" height="24" frameX="-1" frameY="-1" frameWidth="41" frameHeight="26"/>
+    <SubTexture name="lunatic_29" x="263" y="536" width="39" height="23" frameX="-1" frameY="-1" frameWidth="41" frameHeight="25"/>
+    <SubTexture name="lunatic_30" x="856" y="668" width="39" height="26" frameX="-1" frameY="-1" frameWidth="41" frameHeight="28"/>
+    <SubTexture name="lunatic_31" x="297" y="180" width="37" height="29" frameX="-1" frameY="-1" frameWidth="39" frameHeight="31"/>
+    <SubTexture name="lunatic_32" x="903" y="687" width="29" height="26" frameX="-1" frameY="-1" frameWidth="31" frameHeight="28"/>
+    <SubTexture name="lunatic_33" x="590" y="995" width="31" height="27" frameX="-1" frameY="-1" frameWidth="33" frameHeight="29"/>
+    <SubTexture name="lunatic_34" x="207" y="279" width="6" height="6" frameX="-1" frameY="-1" frameWidth="8" frameHeight="8"/>
+    <SubTexture name="lunatic_35" x="555" y="256" width="22" height="18" frameX="-1" frameY="-1" frameWidth="24" frameHeight="20"/>
+    <SubTexture name="lunatic_36" x="617" y="256" width="18" height="16" frameX="-1" frameY="-1" frameWidth="20" frameHeight="18"/>
+    <SubTexture name="lunatic_37" x="386" y="682" width="15" height="14" frameX="-1" frameY="-1" frameWidth="17" frameHeight="16"/>
+    <SubTexture name="lunatic_38" x="130" y="98" width="12" height="10" frameX="-1" frameY="-1" frameWidth="14" frameHeight="12"/>
+    <SubTexture name="lunatic_39" x="282" y="798" width="33" height="22" frameX="-1" frameY="-1" frameWidth="35" frameHeight="24"/>
+    <SubTexture name="lunatic_40" x="689" y="909" width="27" height="37" frameX="-1" frameY="-1" frameWidth="29" frameHeight="39"/>
+    <SubTexture name="lunatic_41" x="434" y="322" width="26" height="43" frameX="-1" frameY="-1" frameWidth="28" frameHeight="45"/>
+    <SubTexture name="lunatic_42" x="711" y="848" width="26" height="34" frameX="-1" frameY="-1" frameWidth="28" frameHeight="36"/>
+    <SubTexture name="lunatic_43" x="894" y="2" width="33" height="26" frameX="-1" frameY="-1" frameWidth="35" frameHeight="28"/>
+    <SubTexture name="lunatic_44" x="436" y="211" width="27" height="43" frameX="-1" frameY="-1" frameWidth="29" frameHeight="45"/>
+    <SubTexture name="lunatic_45" x="392" y="748" width="30" height="48" frameX="-1" frameY="-1" frameWidth="32" frameHeight="50"/>
+    <SubTexture name="lunatic_46" x="643" y="852" width="30" height="37" frameX="-1" frameY="-1" frameWidth="32" frameHeight="39"/>
+    <SubTexture name="lunatic_47" x="894" y="30" width="33" height="26" frameX="-1" frameY="-1" frameWidth="35" frameHeight="28"/>
+    <SubTexture name="lunatic_48" x="903" y="629" width="29" height="27" frameX="-1" frameY="-1" frameWidth="31" frameHeight="29"/>
+    <SubTexture name="lunatic_49" x="798" y="880" width="29" height="27" frameX="-1" frameY="-1" frameWidth="31" frameHeight="29"/>
+    <SubTexture name="lunatic_50" x="781" y="35" width="34" height="26" frameX="-1" frameY="-1" frameWidth="36" frameHeight="28"/>
+    <SubTexture name="lunatic_51" x="638" y="813" width="31" height="37" frameX="-1" frameY="-1" frameWidth="33" frameHeight="39"/>
+    <SubTexture name="lunatic_52" x="613" y="755" width="31" height="37" frameX="-1" frameY="-1" frameWidth="33" frameHeight="39"/>
+    <SubTexture name="lunatic_53" x="349" y="530" width="31" height="29" frameX="-1" frameY="-1" frameWidth="33" frameHeight="31"/>
+    <SubTexture name="lunatic_54" x="670" y="891" width="18" height="16" frameX="-1" frameY="-1" frameWidth="20" frameHeight="18"/>
+    <SubTexture name="lunatic_55" x="403" y="682" width="19" height="13" frameX="-1" frameY="-1" frameWidth="21" frameHeight="15"/>
+    <SubTexture name="magmaring_00" x="388" y="871" width="41" height="48"/>
+    <SubTexture name="magmaring_01" x="48" y="972" width="44" height="50"/>
+    <SubTexture name="magmaring_02" x="263" y="482" width="45" height="52"/>
+    <SubTexture name="magmaring_03" x="260" y="345" width="42" height="52"/>
+    <SubTexture name="magmaring_04" x="371" y="821" width="41" height="48"/>
+    <SubTexture name="magmaring_05" x="2" y="972" width="44" height="50"/>
+    <SubTexture name="magmaring_06" x="250" y="561" width="45" height="53"/>
+    <SubTexture name="magmaring_07" x="228" y="426" width="42" height="54"/>
+    <SubTexture name="magmaring_08" x="346" y="748" width="44" height="48"/>
+    <SubTexture name="magmaring_09" x="171" y="769" width="45" height="51"/>
+    <SubTexture name="magmaring_10" x="462" y="321" width="39" height="42"/>
+    <SubTexture name="magmaring_11" x="359" y="278" width="40" height="44"/>
+    <SubTexture name="magmaring_12" x="272" y="426" width="40" height="52"/>
+    <SubTexture name="magmaring_13" x="2" y="502" width="40" height="66"/>
+    <SubTexture name="magmaring_14" x="218" y="496" width="43" height="63"/>
+    <SubTexture name="magmaring_15" x="171" y="873" width="41" height="49"/>
+    <SubTexture name="magmaring_16" x="342" y="872" width="44" height="48"/>
+    <SubTexture name="magmaring_17" x="312" y="278" width="45" height="51"/>
+    <SubTexture name="magmaring_18" x="442" y="277" width="39" height="42"/>
+    <SubTexture name="magmaring_19" x="423" y="480" width="40" height="44"/>
+    <SubTexture name="magmaring_20" x="304" y="345" width="40" height="52"/>
+    <SubTexture name="magmaring_21" x="2" y="434" width="40" height="66"/>
+    <SubTexture name="magmaring_22" x="240" y="633" width="43" height="63"/>
+    <SubTexture name="magmaring_23" x="171" y="822" width="41" height="49"/>
+    <SubTexture name="magmaring_24" x="346" y="748" width="44" height="48"/>
+    <SubTexture name="magmaring_25" x="509" y="519" width="51" height="36"/>
+    <SubTexture name="magmaring_26" x="163" y="964" width="67" height="54"/>
+    <SubTexture name="magmaring_27" x="55" y="293" width="82" height="67"/>
+    <SubTexture name="magmaring_28" x="309" y="211" width="84" height="65"/>
+    <SubTexture name="magmaring_29" x="886" y="909" width="87" height="31"/>
+    <SubTexture name="magmaring_30" x="381" y="698" width="41" height="48"/>
+    <SubTexture name="magmaring_31" x="718" y="909" width="49" height="33"/>
+    <SubTexture name="magmaring_32" x="94" y="964" width="67" height="54"/>
+    <SubTexture name="magmaring_33" x="2" y="365" width="82" height="67"/>
+    <SubTexture name="magmaring_34" x="226" y="278" width="84" height="65"/>
+    <SubTexture name="magmaring_35" x="829" y="876" width="87" height="31"/>
+    <SubTexture name="magmaring_36" x="338" y="798" width="8" height="22"/>
+    <SubTexture name="magmaring_37" x="591" y="43" width="17" height="18" frameX="-1" frameY="-1" frameWidth="19" frameHeight="20"/>
+    <SubTexture name="magmaring_38" x="565" y="797" width="18" height="17" frameX="-1" frameY="-1" frameWidth="20" frameHeight="19"/>
+    <SubTexture name="magmaring_39" x="118" y="98" width="10" height="11" frameX="-1" frameY="-1" frameWidth="12" frameHeight="13"/>
+    <SubTexture name="magmaring_40" x="528" y="256" width="25" height="18" frameX="-1" frameY="-1" frameWidth="27" frameHeight="20"/>
+    <SubTexture name="magmaring_41" x="2" y="211" width="52" height="80"/>
+    <SubTexture name="magmaring_42" x="2" y="293" width="51" height="70"/>
+    <SubTexture name="magmaring_43" x="86" y="2" width="67" height="94"/>
+    <SubTexture name="magmaring_44" x="2" y="2" width="82" height="108"/>
+    <SubTexture name="magmaring_45" x="2" y="112" width="84" height="97"/>
+    <SubTexture name="magmaring_46" x="401" y="2" width="87" height="63"/>
+    <SubTexture name="metaling_00" x="572" y="758" width="39" height="37" frameX="-1" frameY="-1" frameWidth="41" frameHeight="39"/>
+    <SubTexture name="metaling_01" x="569" y="399" width="41" height="36" frameX="-1" frameY="-1" frameWidth="43" frameHeight="38"/>
+    <SubTexture name="metaling_02" x="975" y="149" width="41" height="31" frameX="-1" frameY="-1" frameWidth="43" frameHeight="33"/>
+    <SubTexture name="metaling_03" x="835" y="602" width="40" height="32" frameX="-1" frameY="-1" frameWidth="42" frameHeight="34"/>
+    <SubTexture name="metaling_04" x="509" y="857" width="39" height="38" frameX="-1" frameY="-1" frameWidth="41" frameHeight="40"/>
+    <SubTexture name="metaling_05" x="669" y="352" width="41" height="35" frameX="-1" frameY="-1" frameWidth="43" frameHeight="37"/>
+    <SubTexture name="metaling_06" x="361" y="446" width="43" height="32" frameX="-1" frameY="-1" frameWidth="45" frameHeight="34"/>
+    <SubTexture name="metaling_07" x="642" y="632" width="41" height="34" frameX="-1" frameY="-1" frameWidth="43" frameHeight="36"/>
+    <SubTexture name="metaling_08" x="589" y="359" width="39" height="36" frameX="-1" frameY="-1" frameWidth="41" frameHeight="38"/>
+    <SubTexture name="metaling_09" x="638" y="671" width="41" height="34" frameX="-1" frameY="-1" frameWidth="43" frameHeight="36"/>
+    <SubTexture name="metaling_10" x="835" y="769" width="41" height="31" frameX="-1" frameY="-1" frameWidth="43" frameHeight="33"/>
+    <SubTexture name="metaling_11" x="633" y="709" width="37" height="35" frameX="-1" frameY="-1" frameWidth="39" frameHeight="37"/>
+    <SubTexture name="metaling_12" x="598" y="716" width="33" height="37" frameX="-1" frameY="-1" frameWidth="35" frameHeight="39"/>
+    <SubTexture name="metaling_13" x="703" y="389" width="37" height="35" frameX="-1" frameY="-1" frameWidth="39" frameHeight="37"/>
+    <SubTexture name="metaling_14" x="701" y="430" width="37" height="35" frameX="-1" frameY="-1" frameWidth="39" frameHeight="37"/>
+    <SubTexture name="metaling_15" x="538" y="595" width="37" height="36" frameX="-1" frameY="-1" frameWidth="39" frameHeight="38"/>
+    <SubTexture name="metaling_16" x="556" y="816" width="39" height="37" frameX="-1" frameY="-1" frameWidth="41" frameHeight="39"/>
+    <SubTexture name="metaling_17" x="742" y="812" width="41" height="33" frameX="-1" frameY="-1" frameWidth="43" frameHeight="35"/>
+    <SubTexture name="metaling_18" x="975" y="86" width="43" height="31" frameX="-1" frameY="-1" frameWidth="45" frameHeight="33"/>
+    <SubTexture name="metaling_19" x="672" y="707" width="37" height="34" frameX="-1" frameY="-1" frameWidth="39" frameHeight="36"/>
+    <SubTexture name="metaling_20" x="514" y="916" width="35" height="38" frameX="-1" frameY="-1" frameWidth="37" frameHeight="40"/>
+    <SubTexture name="metaling_21" x="646" y="746" width="37" height="34" frameX="-1" frameY="-1" frameWidth="39" frameHeight="36"/>
+    <SubTexture name="metaling_22" x="740" y="426" width="37" height="34" frameX="-1" frameY="-1" frameWidth="39" frameHeight="36"/>
+    <SubTexture name="metaling_23" x="711" y="467" width="37" height="34" frameX="-1" frameY="-1" frameWidth="39" frameHeight="36"/>
+    <SubTexture name="metaling_24" x="589" y="359" width="39" height="36" frameX="-1" frameY="-1" frameWidth="41" frameHeight="38"/>
+    <SubTexture name="metaling_25" x="643" y="954" width="41" height="37" frameX="-1" frameY="-1" frameWidth="43" frameHeight="39"/>
+    <SubTexture name="metaling_26" x="176" y="635" width="62" height="63"/>
+    <SubTexture name="metaling_27" x="56" y="211" width="82" height="66"/>
+    <SubTexture name="metaling_28" x="2" y="570" width="95" height="65"/>
+    <SubTexture name="metaling_29" x="457" y="444" width="95" height="34"/>
+    <SubTexture name="metaling_30" x="557" y="719" width="39" height="37" frameX="-1" frameY="-1" frameWidth="41" frameHeight="39"/>
+    <SubTexture name="metaling_31" x="516" y="680" width="40" height="37" frameX="-1" frameY="-1" frameWidth="42" frameHeight="39"/>
+    <SubTexture name="metaling_32" x="360" y="964" width="62" height="48"/>
+    <SubTexture name="metaling_33" x="89" y="704" width="80" height="63"/>
+    <SubTexture name="metaling_34" x="2" y="704" width="85" height="65"/>
+    <SubTexture name="metaling_35" x="936" y="544" width="84" height="28"/>
+    <SubTexture name="metaling_36" x="690" y="884" width="8" height="23" frameX="-1" frameY="-1" frameWidth="10" frameHeight="25"/>
+    <SubTexture name="metaling_37" x="382" y="798" width="17" height="20" frameX="-1" frameY="-1" frameWidth="19" frameHeight="22"/>
+    <SubTexture name="metaling_38" x="550" y="896" width="18" height="17" frameX="-1" frameY="-1" frameWidth="20" frameHeight="19"/>
+    <SubTexture name="metaling_39" x="740" y="978" width="11" height="13" frameX="-1" frameY="-1" frameWidth="13" frameHeight="15"/>
+    <SubTexture name="metaling_40" x="326" y="611" width="27" height="19" frameX="-1" frameY="-1" frameWidth="29" frameHeight="21"/>
+    <SubTexture name="poporing_00" x="599" y="671" width="37" height="36"/>
+    <SubTexture name="poporing_01" x="497" y="599" width="39" height="37"/>
+    <SubTexture name="poporing_02" x="424" y="680" width="41" height="39"/>
+    <SubTexture name="poporing_03" x="757" y="497" width="39" height="33"/>
+    <SubTexture name="poporing_04" x="642" y="314" width="37" height="36"/>
+    <SubTexture name="poporing_05" x="468" y="560" width="39" height="37"/>
+    <SubTexture name="poporing_06" x="465" y="480" width="41" height="39"/>
+    <SubTexture name="poporing_07" x="748" y="538" width="39" height="33"/>
+    <SubTexture name="poporing_08" x="926" y="942" width="37" height="31"/>
+    <SubTexture name="poporing_09" x="929" y="450" width="39" height="30"/>
+    <SubTexture name="poporing_10" x="975" y="406" width="41" height="30"/>
+    <SubTexture name="poporing_11" x="783" y="200" width="35" height="31"/>
+    <SubTexture name="poporing_12" x="747" y="702" width="34" height="34"/>
+    <SubTexture name="poporing_13" x="691" y="276" width="36" height="31"/>
+    <SubTexture name="poporing_14" x="887" y="942" width="37" height="31"/>
+    <SubTexture name="poporing_15" x="820" y="360" width="35" height="31"/>
+    <SubTexture name="poporing_16" x="721" y="96" width="37" height="31"/>
+    <SubTexture name="poporing_17" x="929" y="418" width="39" height="30"/>
+    <SubTexture name="poporing_18" x="975" y="374" width="41" height="30"/>
+    <SubTexture name="poporing_19" x="791" y="327" width="35" height="31"/>
+    <SubTexture name="poporing_20" x="721" y="740" width="34" height="34"/>
+    <SubTexture name="poporing_21" x="761" y="63" width="36" height="31"/>
+    <SubTexture name="poporing_22" x="705" y="137" width="37" height="31"/>
+    <SubTexture name="poporing_23" x="767" y="294" width="35" height="31"/>
+    <SubTexture name="poporing_24" x="599" y="671" width="37" height="36"/>
+    <SubTexture name="poporing_25" x="786" y="846" width="39" height="32"/>
+    <SubTexture name="poporing_26" x="349" y="632" width="62" height="48"/>
+    <SubTexture name="poporing_27" x="254" y="112" width="80" height="66"/>
+    <SubTexture name="poporing_28" x="131" y="501" width="85" height="65"/>
+    <SubTexture name="poporing_29" x="936" y="724" width="84" height="28"/>
+    <SubTexture name="poporing_30" x="642" y="314" width="37" height="36"/>
+    <SubTexture name="poporing_31" x="712" y="352" width="38" height="31"/>
+    <SubTexture name="poporing_32" x="317" y="698" width="62" height="48"/>
+    <SubTexture name="poporing_33" x="89" y="899" width="80" height="63"/>
+    <SubTexture name="poporing_34" x="99" y="568" width="85" height="65"/>
+    <SubTexture name="poporing_35" x="936" y="694" width="84" height="28"/>
+    <SubTexture name="poporing_36" x="849" y="743" width="8" height="23" frameX="-1" frameY="-1" frameWidth="10" frameHeight="25"/>
+    <SubTexture name="poporing_37" x="667" y="43" width="17" height="18" frameX="-1" frameY="-1" frameWidth="19" frameHeight="20"/>
+    <SubTexture name="poporing_38" x="645" y="794" width="18" height="17" frameX="-1" frameY="-1" frameWidth="20" frameHeight="19"/>
+    <SubTexture name="poporing_39" x="831" y="977" width="11" height="13" frameX="-1" frameY="-1" frameWidth="13" frameHeight="15"/>
+    <SubTexture name="poporing_40" x="375" y="378" width="27" height="19" frameX="-1" frameY="-1" frameWidth="29" frameHeight="21"/>
+    <SubTexture name="poporing_41" x="285" y="682" width="20" height="14"/>
+    <SubTexture name="poporing_42" x="524" y="798" width="19" height="17"/>
+    <SubTexture name="poporing_43" x="630" y="355" width="37" height="36"/>
+    <SubTexture name="poporing_44" x="250" y="616" width="23" height="15"/>
+    <SubTexture name="poporing_45" x="314" y="530" width="33" height="29"/>
+    <SubTexture name="poporing_46" x="862" y="842" width="33" height="32"/>
+    <SubTexture name="poporing_47" x="957" y="847" width="12" height="25" frameX="-1" frameY="-1" frameWidth="14" frameHeight="27"/>
+    <SubTexture name="poporing_48" x="909" y="530" width="23" height="24" frameX="-1" frameY="-1" frameWidth="25" frameHeight="26"/>
+    <SubTexture name="poring_00" x="626" y="556" width="37" height="36"/>
+    <SubTexture name="poring_01" x="558" y="677" width="39" height="37"/>
+    <SubTexture name="poring_02" x="424" y="721" width="41" height="39"/>
+    <SubTexture name="poring_03" x="774" y="573" width="39" height="33"/>
+    <SubTexture name="poring_04" x="616" y="594" width="37" height="36"/>
+    <SubTexture name="poring_05" x="523" y="638" width="39" height="37"/>
+    <SubTexture name="poring_06" x="454" y="608" width="41" height="39"/>
+    <SubTexture name="poring_07" x="757" y="615" width="39" height="33"/>
+    <SubTexture name="poring_08" x="878" y="743" width="37" height="31"/>
+    <SubTexture name="poring_09" x="856" y="636" width="39" height="30"/>
+    <SubTexture name="poring_10" x="929" y="2" width="41" height="30"/>
+    <SubTexture name="poring_11" x="840" y="233" width="35" height="31"/>
+    <SubTexture name="poring_12" x="675" y="848" width="34" height="34"/>
+    <SubTexture name="poring_13" x="856" y="2" width="36" height="31"/>
+    <SubTexture name="poring_14" x="974" y="974" width="37" height="31"/>
+    <SubTexture name="poring_15" x="804" y="266" width="35" height="31"/>
+    <SubTexture name="poring_16" x="935" y="975" width="37" height="31"/>
+    <SubTexture name="poring_17" x="929" y="482" width="39" height="30"/>
+    <SubTexture name="poring_18" x="975" y="438" width="41" height="30"/>
+    <SubTexture name="poring_19" x="820" y="200" width="35" height="31"/>
+    <SubTexture name="poring_20" x="753" y="663" width="34" height="34"/>
+    <SubTexture name="poring_21" x="781" y="2" width="36" height="31"/>
+    <SubTexture name="poring_22" x="896" y="975" width="37" height="31"/>
+    <SubTexture name="poring_23" x="803" y="233" width="35" height="31"/>
+    <SubTexture name="poring_24" x="626" y="556" width="37" height="36"/>
+    <SubTexture name="poring_25" x="810" y="909" width="39" height="32"/>
+    <SubTexture name="poring_26" x="307" y="822" width="62" height="48"/>
+    <SubTexture name="poring_27" x="319" y="2" width="80" height="66"/>
+    <SubTexture name="poring_28" x="173" y="359" width="85" height="65"/>
+    <SubTexture name="poring_29" x="936" y="784" width="84" height="28"/>
+    <SubTexture name="poring_30" x="616" y="594" width="37" height="36"/>
+    <SubTexture name="poring_31" x="863" y="802" width="38" height="31"/>
+    <SubTexture name="poring_32" x="361" y="561" width="62" height="48"/>
+    <SubTexture name="poring_33" x="171" y="704" width="80" height="63"/>
+    <SubTexture name="poring_34" x="141" y="429" width="85" height="65"/>
+    <SubTexture name="poring_35" x="936" y="754" width="84" height="28"/>
+    <SubTexture name="poring_36" x="859" y="743" width="8" height="23" frameX="-1" frameY="-1" frameWidth="10" frameHeight="25"/>
+    <SubTexture name="poring_37" x="442" y="659" width="17" height="18" frameX="-1" frameY="-1" frameWidth="19" frameHeight="20"/>
+    <SubTexture name="poring_38" x="650" y="891" width="18" height="17" frameX="-1" frameY="-1" frameWidth="20" frameHeight="19"/>
+    <SubTexture name="poring_39" x="844" y="977" width="11" height="13" frameX="-1" frameY="-1" frameWidth="13" frameHeight="15"/>
+    <SubTexture name="poring_40" x="395" y="256" width="27" height="19" frameX="-1" frameY="-1" frameWidth="29" frameHeight="21"/>
+    <SubTexture name="poring_41" x="307" y="682" width="20" height="14"/>
+    <SubTexture name="poring_42" x="509" y="897" width="19" height="17"/>
+    <SubTexture name="poring_43" x="603" y="633" width="37" height="36"/>
+    <SubTexture name="poring_44" x="250" y="616" width="23" height="15"/>
+    <SubTexture name="poring_45" x="314" y="530" width="33" height="29"/>
+    <SubTexture name="poring_46" x="851" y="909" width="33" height="32"/>
+    <SubTexture name="poring_47" x="957" y="847" width="12" height="25" frameX="-1" frameY="-1" frameWidth="14" frameHeight="27"/>
+    <SubTexture name="poring_48" x="878" y="596" width="23" height="24" frameX="-1" frameY="-1" frameWidth="25" frameHeight="26"/>
+    <SubTexture name="pouring_00" x="564" y="633" width="37" height="36"/>
+    <SubTexture name="pouring_01" x="602" y="855" width="39" height="37"/>
+    <SubTexture name="pouring_02" x="600" y="104" width="41" height="39"/>
+    <SubTexture name="pouring_03" x="798" y="734" width="39" height="33"/>
+    <SubTexture name="pouring_04" x="562" y="518" width="37" height="36"/>
+    <SubTexture name="pouring_05" x="597" y="816" width="39" height="37"/>
+    <SubTexture name="pouring_06" x="592" y="153" width="41" height="39"/>
+    <SubTexture name="pouring_07" x="783" y="699" width="39" height="33"/>
+    <SubTexture name="pouring_08" x="936" y="814" width="37" height="31"/>
+    <SubTexture name="pouring_09" x="929" y="258" width="39" height="30"/>
+    <SubTexture name="pouring_10" x="975" y="214" width="41" height="30"/>
+    <SubTexture name="pouring_11" x="791" y="134" width="35" height="31"/>
+    <SubTexture name="pouring_12" x="711" y="704" width="34" height="34"/>
+    <SubTexture name="pouring_13" x="743" y="2" width="36" height="31"/>
+    <SubTexture name="pouring_14" x="975" y="814" width="37" height="31"/>
+    <SubTexture name="pouring_15" x="856" y="134" width="35" height="31"/>
+    <SubTexture name="pouring_16" x="854" y="696" width="37" height="31"/>
+    <SubTexture name="pouring_17" x="929" y="226" width="39" height="30"/>
+    <SubTexture name="pouring_18" x="975" y="182" width="41" height="30"/>
+    <SubTexture name="pouring_19" x="798" y="101" width="35" height="31"/>
+    <SubTexture name="pouring_20" x="685" y="630" width="34" height="34"/>
+    <SubTexture name="pouring_21" x="723" y="63" width="36" height="31"/>
+    <SubTexture name="pouring_22" x="643" y="104" width="37" height="31"/>
+    <SubTexture name="pouring_23" x="856" y="101" width="35" height="31"/>
+    <SubTexture name="pouring_24" x="564" y="633" width="37" height="36"/>
+    <SubTexture name="pouring_25" x="768" y="944" width="39" height="32"/>
+    <SubTexture name="pouring_26" x="296" y="964" width="62" height="48"/>
+    <SubTexture name="pouring_27" x="418" y="112" width="80" height="65"/>
+    <SubTexture name="pouring_28" x="2" y="637" width="85" height="65"/>
+    <SubTexture name="pouring_29" x="936" y="514" width="84" height="28"/>
+    <SubTexture name="pouring_30" x="548" y="557" width="37" height="36"/>
+    <SubTexture name="pouring_31" x="846" y="563" width="38" height="31"/>
+    <SubTexture name="pouring_32" x="278" y="872" width="62" height="48"/>
+    <SubTexture name="pouring_33" x="336" y="112" width="80" height="65"/>
+    <SubTexture name="pouring_34" x="222" y="211" width="85" height="65"/>
+    <SubTexture name="pouring_35" x="681" y="322" width="84" height="28"/>
+    <SubTexture name="pouring_36" x="710" y="884" width="8" height="23"/>
+    <SubTexture name="pouring_37" x="545" y="797" width="18" height="17" frameX="-1" frameY="-1" frameWidth="20" frameHeight="19"/>
+    <SubTexture name="pouring_38" x="590" y="896" width="18" height="17" frameX="-1" frameY="-1" frameWidth="20" frameHeight="19"/>
+    <SubTexture name="pouring_39" x="73" y="279" width="10" height="12" frameX="-1" frameY="-1" frameWidth="12" frameHeight="14"/>
+    <SubTexture name="pouring_40" x="430" y="798" width="24" height="17" frameX="-1" frameY="-1" frameWidth="26" frameHeight="19"/>
+    <SubTexture name="siorava_00" x="543" y="995" width="45" height="27" frameX="-1" frameY="-1" frameWidth="47" frameHeight="29"/>
+    <SubTexture name="siorava_01" x="975" y="58" width="47" height="26" frameX="-1" frameY="-1" frameWidth="49" frameHeight="28"/>
+    <SubTexture name="siorava_02" x="260" y="399" width="52" height="25" frameX="-1" frameY="-1" frameWidth="54" frameHeight="27"/>
+    <SubTexture name="siorava_03" x="975" y="30" width="47" height="26" frameX="-1" frameY="-1" frameWidth="49" frameHeight="28"/>
+    <SubTexture name="siorava_04" x="173" y="180" width="40" height="29" frameX="-1" frameY="-1" frameWidth="42" frameHeight="31"/>
+    <SubTexture name="siorava_05" x="975" y="119" width="42" height="28" frameX="-1" frameY="-1" frameWidth="44" frameHeight="30"/>
+    <SubTexture name="siorava_06" x="500" y="153" width="49" height="24" frameX="-1" frameY="-1" frameWidth="51" frameHeight="26"/>
+    <SubTexture name="siorava_07" x="975" y="119" width="42" height="28" frameX="-1" frameY="-1" frameWidth="44" frameHeight="30"/>
+    <SubTexture name="siorava_08" x="543" y="995" width="45" height="27" frameX="-1" frameY="-1" frameWidth="47" frameHeight="29"/>
+    <SubTexture name="siorava_09" x="975" y="30" width="47" height="26" frameX="-1" frameY="-1" frameWidth="49" frameHeight="28"/>
+    <SubTexture name="siorava_10" x="260" y="399" width="52" height="25" frameX="-1" frameY="-1" frameWidth="54" frameHeight="27"/>
+    <SubTexture name="siorava_11" x="374" y="480" width="47" height="45" frameX="-1" frameY="-1" frameWidth="49" frameHeight="47"/>
+    <SubTexture name="siorava_12" x="476" y="399" width="46" height="42"/>
+    <SubTexture name="siorava_13" x="739" y="848" width="45" height="33"/>
+    <SubTexture name="siorava_14" x="975" y="2" width="47" height="26"/>
+    <SubTexture name="siorava_15" x="314" y="446" width="45" height="32"/>
+    <SubTexture name="siorava_16" x="173" y="180" width="40" height="29"/>
+    <SubTexture name="siorava_17" x="975" y="119" width="42" height="28"/>
+    <SubTexture name="siorava_18" x="500" y="153" width="49" height="24"/>
+    <SubTexture name="siorava_19" x="346" y="331" width="45" height="45" frameX="-1" frameY="-1" frameWidth="47" frameHeight="47"/>
+    <SubTexture name="siorava_20" x="393" y="324" width="39" height="44"/>
+    <SubTexture name="siorava_21" x="131" y="180" width="40" height="29"/>
+    <SubTexture name="siorava_22" x="975" y="119" width="42" height="28"/>
+    <SubTexture name="siorava_23" x="751" y="776" width="41" height="33"/>
+    <SubTexture name="siorava_24" x="543" y="995" width="45" height="27" frameX="-1" frameY="-1" frameWidth="47" frameHeight="29"/>
+    <SubTexture name="siorava_25" x="404" y="370" width="47" height="27" frameX="-1" frameY="-1" frameWidth="49" frameHeight="29"/>
+    <SubTexture name="siorava_26" x="239" y="70" width="76" height="40" frameX="-1" frameY="-1" frameWidth="78" frameHeight="42"/>
+    <SubTexture name="siorava_27" x="414" y="820" width="91" height="47" frameX="-1" frameY="-1" frameWidth="93" frameHeight="49"/>
+    <SubTexture name="siorava_28" x="161" y="70" width="76" height="40" frameX="-1" frameY="-1" frameWidth="78" frameHeight="42"/>
+    <SubTexture name="siorava_29" x="404" y="370" width="47" height="27" frameX="-1" frameY="-1" frameWidth="49" frameHeight="29"/>
+    <SubTexture name="siorava_30" x="173" y="180" width="40" height="29" frameX="-1" frameY="-1" frameWidth="42" frameHeight="31"/>
+    <SubTexture name="siorava_31" x="406" y="445" width="49" height="33" frameX="-1" frameY="-1" frameWidth="51" frameHeight="35"/>
+    <SubTexture name="siorava_32" x="483" y="277" width="76" height="39" frameX="-1" frameY="-1" frameWidth="78" frameHeight="41"/>
+    <SubTexture name="siorava_33" x="214" y="822" width="91" height="48" frameX="-1" frameY="-1" frameWidth="93" frameHeight="50"/>
+    <SubTexture name="siorava_34" x="465" y="179" width="76" height="39" frameX="-1" frameY="-1" frameWidth="78" frameHeight="41"/>
+    <SubTexture name="siorava_35" x="406" y="445" width="49" height="33" frameX="-1" frameY="-1" frameWidth="51" frameHeight="35"/>
+    <SubTexture name="siorava_36" x="970" y="470" width="48" height="28" frameX="-1" frameY="-1" frameWidth="50" frameHeight="30"/>
+    <SubTexture name="siorava_37" x="551" y="915" width="48" height="37" frameX="-1" frameY="-1" frameWidth="50" frameHeight="39"/>
+    <SubTexture name="siorava_38" x="374" y="922" width="47" height="40" frameX="-1" frameY="-1" frameWidth="49" frameHeight="42"/>
+    <SubTexture name="siorava_39" x="314" y="399" width="67" height="45"/>
+    <SubTexture name="siorava_40" x="572" y="43" width="17" height="18" frameX="-1" frameY="-1" frameWidth="19" frameHeight="20"/>
+    <SubTexture name="siorava_41" x="700" y="884" width="8" height="23" frameX="-1" frameY="-1" frameWidth="10" frameHeight="25"/>
+    <SubTexture name="siorava_42" x="570" y="896" width="18" height="17" frameX="-1" frameY="-1" frameWidth="20" frameHeight="19"/>
+    <SubTexture name="siorava_43" x="753" y="978" width="11" height="13" frameX="-1" frameY="-1" frameWidth="13" frameHeight="15"/>
+    <SubTexture name="siorava_44" x="355" y="611" width="27" height="19" frameX="-1" frameY="-1" frameWidth="29" frameHeight="21"/>
+    <SubTexture name="siorava_45" x="929" y="34" width="40" height="30" frameX="-1" frameY="-1" frameWidth="42" frameHeight="32"/>
+    <SubTexture name="siorava_46" x="595" y="954" width="46" height="37" frameX="-1" frameY="-1" frameWidth="48" frameHeight="39"/>
+    <SubTexture name="siorava_47" x="551" y="67" width="45" height="39" frameX="-1" frameY="-1" frameWidth="47" frameHeight="41"/>
+</TextureAtlas>
