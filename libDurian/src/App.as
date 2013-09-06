@@ -7,6 +7,7 @@ package {
 	import flash.display.Stage;
 	import flash.display.StageAlign;
 	import flash.display.StageScaleMode;
+	
 	import morn.core.components.View;
 	import morn.core.handlers.Handler;
 	import morn.core.managers.AssetManager;
@@ -18,7 +19,7 @@ package {
 	import morn.core.managers.RenderManager;
 	import morn.core.managers.TimerManager;
 	import morn.core.managers.TipManager;
-	
+    
 	/**全局引用入口*/
 	public class App {
 		/**全局stage引用*/

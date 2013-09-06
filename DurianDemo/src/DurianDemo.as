@@ -1,12 +1,10 @@
 package
 {
     import flash.events.Event;
-    import flash.geom.Point;
     import flash.utils.ByteArray;
     
     import durian.actSpr.structs.CACT;
     import durian.actTpc.ActTpcView;
-    import durian.display.MultiAnimation;
     import durian.interfaces.ITickable;
     import durian.robotlegs.DurianBundle;
     
@@ -73,10 +71,10 @@ package
         private function onActTpcReady( textureAtlas:TextureAtlas ):void
         {
             _viewList = new Vector.<DisplayObject>();
-
+            
             var actBytes:ByteArray = App.loader.getResLoaded( ResTable.ACT_ZIP );
             zipMgr.addZip( ResTable.ACT_ZIP , actBytes );
-
+            
             var cact:CACT = new CACT( zipMgr.getFileFromZip( ResTable.ACT_ZIP , ResTable.MONSTER_PORING_ACT ));
             
             var count:int = 0;
