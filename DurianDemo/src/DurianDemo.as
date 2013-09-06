@@ -10,6 +10,9 @@ package
     import morn.core.handlers.Handler;
     import morn.core.managers.ResLoader;
     
+    import nochump.util.zip.ZipEntry;
+    import nochump.util.zip.ZipFile;
+    
     import robotlegs.bender.bundles.mvcs.MVCSBundle;
     import robotlegs.bender.extensions.contextView.ContextView;
     import robotlegs.bender.framework.impl.Context;
@@ -52,9 +55,10 @@ package
             //            addChild( testView );
             
             var assetList:Array = [];
-            assetList.push( {url: ResTable.MONSTER_PORING_ACT, type:ResLoader.BYTE} );
+            //            assetList.push( {url: ResTable.MONSTER_PORING_ACT, type:ResLoader.BYTE} );
             assetList.push( {url: ResTable.MONSTER_TEXTURE_001, type:ResLoader.BYTE} );
             assetList.push( {url: ResTable.MONSTER_ATLASXML_001, type:ResLoader.TXT} );
+            assetList.push( {url: ResTable.ACT_ZIP, type:ResLoader.BYTE} );
             App.loader.loadAssets( assetList , new Handler( onAssetLoaded ) );
         }
         
@@ -68,11 +72,24 @@ package
         private function onActTpcReady( textureAtlas:TextureAtlas ):void
         {
             _viewList = new Vector.<ActTpcView>();
+
+            var cact:CACT;
             
-            var cact:CACT = new CACT( App.loader.getResLoaded( ResTable.MONSTER_PORING_ACT ) );
+            var actBytes:ByteArray = App.loader.getResLoaded( ResTable.ACT_ZIP );
+            var zipFile:ZipFile = new ZipFile( actBytes );
+            for ( var i:int = 0; i < zipFile.entries.length ;  i++) 
+            {
+                var entry:ZipEntry = zipFile.entries[i];
+                if( entry.name == ResTable.MONSTER_PORING_ACT )
+                {
+                    var data:ByteArray = zipFile.getInput(entry);
+                    cact = new CACT( data );
+                    break;
+                }
+            }
             
             var count:int = 0;
-            while( count < 300 )
+            while( count < 100 )
             {
                 newActTpcView( cact , ResTable.MONSTER_TEXTURE_001 , textureAtlas );
                 count++;
@@ -110,8 +127,8 @@ package
                 var i:int = 0;
                 while( i < _viewList.length )
                 {
-                    _viewList[i].x = 50 + ( i % 25 ) * 30;
-                    _viewList[i].y = 50 + int( i / 25 ) * 30;
+                    _viewList[i].x = 50 + ( i % 20 ) * 40;
+                    _viewList[i].y = 50 + int( i / 20 ) * 40;
                     _viewList[i].tick( delta );
                     i++;
                 }
