@@ -26,7 +26,7 @@ package durian.actTpc
             {
                 return;
             }
-            _currentAaap = _act.aall.aa[_actionIndex].aaap[_currentFrame];
+            _currentAaap = _aaapList[_stateIndex][_currentFrame];
             
             var isExt:Boolean = false;
             if( _currentAaap.apsList.length == 0 )

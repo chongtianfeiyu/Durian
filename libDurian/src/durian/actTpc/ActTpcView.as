@@ -5,106 +5,48 @@ package durian.actTpc
     import durian.actSpr.structs.CACT;
     import durian.actSpr.structs.acth.AnyActAnyPat;
     import durian.actSpr.structs.acth.AnyPatSprV0101;
+    import durian.display.MultiStateAnimaiton;
     import durian.events.ActTpcEvent;
-    import durian.utils.Counter;
     
-    import starling.display.Image;
-    import starling.display.Sprite;
     import starling.textures.Texture;
     import starling.textures.TextureAtlas;
-    import starling.textures.TextureSmoothing;
     
-    public class ActTpcView extends Sprite
+    public class ActTpcView extends MultiStateAnimaiton
     {
         protected static const NULL_TEXTURE:Texture = Texture.fromBitmapData(new BitmapData(1,1,true,0));
         
-        protected var _act:CACT;
-        protected var _textureList:Vector.<Texture>;
-//        protected var _textureAtlas:TextureAtlas;
-        
-        protected var _actionIndex:uint;
-        protected var _currentFrame:uint;
+        protected var _aaapList:Vector.<Vector.<AnyActAnyPat>>;
         protected var _currentAaap:AnyActAnyPat;
-        protected var _animationDisplay:Image;
-        protected var _baseCounterTarget:Number;
-        protected var _counterTarget:Number;
-        protected var _counter:Counter;
-        protected var _couldTick:Boolean;
-        /**
-         * 动作速率
-         */        
-        protected var _currentTargetRate:Number;
-        protected var _loop:Boolean;
-        
-        protected var _name:String;
-        
-        public function get texture():Texture
-        {
-            return _animationDisplay.texture;
-        }
         
         public function ActTpcView( name:String )
         {
-            _name = name;
-            _counter = new Counter();
-            _baseCounterTarget = 0.075 ;
-            _counterTarget = _baseCounterTarget;
-        }
-        
-        public function get currentAaap():AnyActAnyPat
-        {
-            return _currentAaap;
-        }
-        
-        public function get counterTargetRate():Number
-        {
-            return _currentTargetRate;
-        }
-        
-        public function set counterTargetRate( value:Number ):void
-        {
-            _currentTargetRate = value;
-            if( _currentTargetRate >= 1 )
-            {
-                _currentTargetRate = 0.8;
-            }
-            _counterTarget = _baseCounterTarget * ( 1 - _currentTargetRate );
-        }
-        
-        public function set actionIndex( value:uint ):void 
-        {
-            if( _actionIndex != value )
-            {
-                _actionIndex = value;
-                currentFrame = 0;
-            }
-        }
-        
-        public function get actionIndex():uint
-        {
-            return   _actionIndex;
-        }
-        
-        public function get currentFrame():uint
-        {
-            return _currentFrame;
-        }
-        
-        public function set currentFrame( value:uint ):void
-        {
-            _currentFrame = value;
-        }
-        
-        public function set loop( value:Boolean ):void
-        {
-            _loop = value;
+            super( name );
         }
         
         public function initAct( cact:CACT  ):void
         {
             _couldTick = false;
-            _act = cact;
-            actionIndex = 0;
+            
+            _animationConfig = new Vector.<Vector.<String>>();
+            _aaapList = new Vector.<Vector.<AnyActAnyPat>>();
+            
+            var lenState:int = cact.aall.aa.length;
+            var lenFrame:int;
+            for( var i:int = 0;i<lenState ;i++)
+            {
+                _animationConfig[i] = new Vector.<String>();
+                _aaapList[i] = new Vector.<AnyActAnyPat>();
+                
+                lenFrame =  cact.aall.aa[i].aaap.length;
+                
+                for( var j:int = 0;j<lenFrame;j++)
+                {
+                    _animationConfig[i][j] = cact.aall.aa[i].aaap[j].apsList[0];
+                    _aaapList[i][j] = cact.aall.aa[i].aaap[j];
+                }
+            }
+            
+            stateIndex = 0;
             currentFrame = 0;
             _counter.initialize();
             _counter.reset( _counterTarget );
@@ -112,44 +54,16 @@ package durian.actTpc
         
         public function initTpc( resId:String , textureAtlas:TextureAtlas ):void
         {
-            _couldTick = false;
-            _textureList = new Vector.<Texture>();
-            var textureTmp:Texture;
-            
-            for( var i:int = 0;i<int.MAX_VALUE;i++)
-            {
-                textureTmp = textureAtlas.getTexture( _name + ( i >= 10 ? "":"0") + i );
-                if( textureTmp )
-                {
-                    _textureList[i] = textureTmp;
-                }
-                else 
-                {
-                    break;
-                }
-            }
-            onInited();
+            super.updateAnimation( textureAtlas );
         }
         
-        protected function onInited():void
+        override protected function onInited():void
         {
-            actionIndex = 0;
-            currentFrame = 0;
-            _counter.initialize();
-            _counter.reset( _counterTarget );
-            
-            _animationDisplay = new Image(NULL_TEXTURE);
-            _animationDisplay.smoothing = TextureSmoothing.TRILINEAR;
-            addChildAt(_animationDisplay, 0);
-            _animationDisplay.touchable = true;
-            
-            _counter.initialize();
-            _counter.reset( _counterTarget );
-            updateFrame();
-            _couldTick = true;
+            stateIndex = 0;
+            super.onInited();
         }
         
-        public function tick(delta:Number):void
+        override public function tick(delta:Number):void
         {
             if( !_couldTick )
             {
@@ -157,14 +71,16 @@ package durian.actTpc
             }
             _counter.tick( delta );
             var couldRender:Boolean;
+            
+            var lenState:int = _animationConfig.length;
             while( _counter.expired == true )
             {
-                if( _act.aall.aa.length <= _actionIndex )
+                if( lenState <= _stateIndex )
                 {
-                    _actionIndex = 0;
+                    _stateIndex = 0;
                     return;
                 }
-                if( _currentFrame >= _act.aall.aa[_actionIndex].aaap.length - 1 )
+                if( _currentFrame >= _animationConfig[_stateIndex].length - 1 )
                 {
                     if( _loop )
                     {
@@ -186,9 +102,9 @@ package durian.actTpc
             }
         }
         
-        public function updateFrame():void
+        override public function updateFrame():void
         {
-            _currentAaap = _act.aall.aa[_actionIndex].aaap[_currentFrame];
+            _currentAaap = _aaapList[_stateIndex][_currentFrame];
             
             var isExt:Boolean = false;
             if( _currentAaap.apsList.length == 0 )
@@ -231,21 +147,20 @@ package durian.actTpc
             }
         }
         
-        protected function distruct():void
+        override public function dispose():void
         {
-            while(_textureList.length)
-            {
-                _textureList.splice( 0 , 1 );
-            }
-            _animationDisplay.removeFromParent(true);
-            _animationDisplay = null;
-            _couldTick = false;
             super.dispose();
         }
         
-        public function get couldTick():Boolean
+        override protected function distruct():void
         {
-            return _couldTick;
+            //TODO:
+            super.distruct();
+        }
+        
+        public function get currentAaap():AnyActAnyPat
+        {
+            return _currentAaap;
         }
     }
 }

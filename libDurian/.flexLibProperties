@@ -3,6 +3,7 @@
   <includeClasses>
     <classEntry path="App"/>
     <classEntry path="Config"/>
+    <classEntry path="DurianMainSprite"/>
     <classEntry path="com.adobe.utils.AGALMiniAssembler"/>
     <classEntry path="durian.actSpr.ActSprBodyView"/>
     <classEntry path="durian.actSpr.ActSprOtherView"/>
@@ -30,13 +31,16 @@
     <classEntry path="durian.actTpc.ActTpcPlayerView"/>
     <classEntry path="durian.actTpc.ActTpcView"/>
     <classEntry path="durian.actTpc.ActTpcWeaponView"/>
+    <classEntry path="durian.display.Animation"/>
     <classEntry path="durian.events.ActSprEvent"/>
     <classEntry path="durian.events.ActTpcEvent"/>
     <classEntry path="durian.events.UserInfoEvent"/>
     <classEntry path="durian.interfaces.IDisplayMgr"/>
     <classEntry path="durian.interfaces.IKeyMgr"/>
+    <classEntry path="durian.interfaces.ISprMgr"/>
     <classEntry path="durian.interfaces.ITextureMgr"/>
     <classEntry path="durian.interfaces.ITickable"/>
+    <classEntry path="durian.interfaces.IZipMgr"/>
     <classEntry path="durian.robotlegs.DurianBundle"/>
     <classEntry path="durian.robotlegs.DurianConfig"/>
     <classEntry path="durian.robotlegs.extensions.displayMgrExtension.DisplayMgr"/>
@@ -45,7 +49,11 @@
     <classEntry path="durian.robotlegs.extensions.keyMgrExtension.KeyMgrExtension"/>
     <classEntry path="durian.robotlegs.extensions.textureMgrExtension.TextureMgr"/>
     <classEntry path="durian.robotlegs.extensions.textureMgrExtension.TextureMgrExtension"/>
+    <classEntry path="durian.robotlegs.extensions.zipMgrExtension.ZipMgr"/>
+    <classEntry path="durian.robotlegs.extensions.zipMgrExtension.ZipMgrExtension"/>
     <classEntry path="durian.starling.StarlingMain"/>
+    <classEntry path="durian.utils.Counter"/>
+    <classEntry path="durian.utils.QTree"/>
     <classEntry path="feathers.controls.Alert"/>
     <classEntry path="feathers.controls.Button"/>
     <classEntry path="feathers.controls.ButtonGroup"/>
@@ -238,6 +246,14 @@
     <classEntry path="morn.editor.core.IComponent"/>
     <classEntry path="morn.editor.core.IContent"/>
     <classEntry path="morn.editor.core.IList"/>
+    <classEntry path="nochump.util.zip.CRC32"/>
+    <classEntry path="nochump.util.zip.Deflater"/>
+    <classEntry path="nochump.util.zip.Inflater"/>
+    <classEntry path="nochump.util.zip.ZipConstants"/>
+    <classEntry path="nochump.util.zip.ZipEntry"/>
+    <classEntry path="nochump.util.zip.ZipError"/>
+    <classEntry path="nochump.util.zip.ZipFile"/>
+    <classEntry path="nochump.util.zip.ZipOutput"/>
     <classEntry path="robotlegs.bender.bundles.mvcs.Command"/>
     <classEntry path="robotlegs.bender.bundles.mvcs.MVCSBundle"/>
     <classEntry path="robotlegs.bender.bundles.mvcs.Mediator"/>
@@ -446,6 +462,10 @@
     <classEntry path="starling.utils.getNextPowerOfTwo"/>
     <classEntry path="starling.utils.rad2deg"/>
     <classEntry path="starling.utils.transformCoords"/>
+    <classEntry path="durian.display.MultiAnimation"/>
+    <classEntry path="durian.display.IAnimation"/>
+    <classEntry path="durian.display.MultiStateAnimaiton"/>
+    <classEntry path="durian.display.IMultiStateAnimation"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

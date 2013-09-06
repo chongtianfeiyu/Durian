@@ -11,7 +11,7 @@ package durian.actTpc
         {
             super.tick( delta );
             //only stand
-            if( _actionIndex < 8 || (_actionIndex >=16) && (_actionIndex < 24)  )
+            if( _stateIndex < 8 || (_stateIndex >=16) && (_stateIndex < 24)  )
             {
                 currentFrame = 2;
             }

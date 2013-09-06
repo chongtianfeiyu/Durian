@@ -1,28 +1,29 @@
 package
 {
     import flash.events.Event;
+    import flash.geom.Point;
     import flash.utils.ByteArray;
     
     import durian.actSpr.structs.CACT;
     import durian.actTpc.ActTpcView;
+    import durian.display.MultiAnimation;
+    import durian.interfaces.ITickable;
     import durian.robotlegs.DurianBundle;
     
     import morn.core.handlers.Handler;
     import morn.core.managers.ResLoader;
     
-    import nochump.util.zip.ZipEntry;
-    import nochump.util.zip.ZipFile;
-    
     import robotlegs.bender.bundles.mvcs.MVCSBundle;
     import robotlegs.bender.extensions.contextView.ContextView;
     import robotlegs.bender.framework.impl.Context;
     
+    import starling.display.DisplayObject;
     import starling.textures.TextureAtlas;
     
     [SWF(width="960",height="640",frameRate="60",backgroundColor="#ffffff")]
     public class DurianDemo extends DurianMainSprite
     {
-        protected var _viewList:Vector.<ActTpcView>;
+        protected var _viewList:Vector.<DisplayObject>;
         
         public function DurianDemo()
         {
@@ -71,7 +72,7 @@ package
         
         private function onActTpcReady( textureAtlas:TextureAtlas ):void
         {
-            _viewList = new Vector.<ActTpcView>();
+            _viewList = new Vector.<DisplayObject>();
 
             var actBytes:ByteArray = App.loader.getResLoaded( ResTable.ACT_ZIP );
             zipMgr.addZip( ResTable.ACT_ZIP , actBytes );
@@ -79,11 +80,21 @@ package
             var cact:CACT = new CACT( zipMgr.getFileFromZip( ResTable.ACT_ZIP , ResTable.MONSTER_PORING_ACT ));
             
             var count:int = 0;
-            while( count < 50 )
+            while( count < 100 )
             {
                 newActTpcView( cact , ResTable.MONSTER_TEXTURE_001 , textureAtlas );
                 count++;
             }
+            
+            //            var posList:Vector.<Point> = new Vector.<Point>();
+            //            posList.push( new Point( 0 , 0 ) );
+            //            posList.push( new Point( 20 , 0 ) );
+            //            posList.push( new Point( 0 , 20 ) );
+            //            posList.push( new Point( 20 , 20 ) );
+            //            var aniDisplay:MultiAnimation = new MultiAnimation( Vector.<String>( ["poring_" , "poporing_" , "goldporing_" , "em_deviling_"] ) , posList );
+            //            aniDisplay.updateAnimation( textureAtlas );
+            //            _starlingMain.addChild( aniDisplay );
+            //            _viewList.push( aniDisplay );
         }
         
         private function newActTpcView( cact:CACT , resId:String , textureAtlas:TextureAtlas ):ActTpcView
@@ -102,7 +113,7 @@ package
             viewObj.initTpc( resId , textureAtlas );
             viewObj.counterTargetRate = 0.15;
             viewObj.loop = true;
-            viewObj.actionIndex = 8;
+            viewObj.stateIndex = 8;
             _starlingMain.addChild( viewObj );
             _viewList.push( viewObj );
             return viewObj;
@@ -119,7 +130,7 @@ package
                 {
                     _viewList[i].x = 50 + ( i % 20 ) * 40;
                     _viewList[i].y = 50 + int( i / 20 ) * 40;
-                    _viewList[i].tick( delta );
+                    ( _viewList[i] as ITickable ).tick( delta );
                     i++;
                 }
             }

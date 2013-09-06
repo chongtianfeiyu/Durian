@@ -4,7 +4,7 @@ package durian.actTpc
     
     import starling.textures.Texture;
     
-
+    
     public class ActTpcWeaponView extends ActTpcOtherView
     {
         public function ActTpcWeaponView( name:String , bodyView:ActTpcBodyView )
@@ -24,7 +24,7 @@ package durian.actTpc
                 return;
             }
             
-            _currentAaap = _act.aall.aa[_actionIndex].aaap[_currentFrame];
+            _currentAaap = _aaapList[_stateIndex][_currentFrame];
             
             var isExt:Boolean = false;
             if( _currentAaap.apsList.length == 0 )
