@@ -73,23 +73,13 @@ package
         {
             _viewList = new Vector.<ActTpcView>();
 
-            var cact:CACT;
-            
             var actBytes:ByteArray = App.loader.getResLoaded( ResTable.ACT_ZIP );
-            var zipFile:ZipFile = new ZipFile( actBytes );
-            for ( var i:int = 0; i < zipFile.entries.length ;  i++) 
-            {
-                var entry:ZipEntry = zipFile.entries[i];
-                if( entry.name == ResTable.MONSTER_PORING_ACT )
-                {
-                    var data:ByteArray = zipFile.getInput(entry);
-                    cact = new CACT( data );
-                    break;
-                }
-            }
+            zipMgr.addZip( ResTable.ACT_ZIP , actBytes );
+
+            var cact:CACT = new CACT( zipMgr.getFileFromZip( ResTable.ACT_ZIP , ResTable.MONSTER_PORING_ACT ));
             
             var count:int = 0;
-            while( count < 100 )
+            while( count < 50 )
             {
                 newActTpcView( cact , ResTable.MONSTER_TEXTURE_001 , textureAtlas );
                 count++;

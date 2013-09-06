@@ -3,6 +3,7 @@ package durian.robotlegs
     import durian.robotlegs.extensions.displayMgrExtension.DisplayMgrExtension;
     import durian.robotlegs.extensions.keyMgrExtension.KeyMgrExtension;
     import durian.robotlegs.extensions.textureMgrExtension.TextureMgrExtension;
+    import durian.robotlegs.extensions.zipMgrExtension.ZipMgrExtension;
     
     import robotlegs.bender.framework.api.IBundle;
     import robotlegs.bender.framework.api.IContext;
@@ -14,6 +15,7 @@ package durian.robotlegs
             context.install(
                 DisplayMgrExtension,
                 KeyMgrExtension,
+                ZipMgrExtension,
                 TextureMgrExtension
                 );    
             

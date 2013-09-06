@@ -5,6 +5,7 @@ package
     
     import durian.interfaces.IDisplayMgr;
     import durian.interfaces.ITextureMgr;
+    import durian.interfaces.IZipMgr;
     import durian.starling.StarlingMain;
     
     import robotlegs.bender.framework.api.IContext;
@@ -21,6 +22,9 @@ package
         
         [Inject]
         public var displayMgr:IDisplayMgr;
+        
+        [Inject]
+        public var zipMgr:IZipMgr; 
         
         [Inject]
         public var textureMgr:ITextureMgr;
