@@ -1,7 +1,24 @@
 package
 {
-    import flash.events.Event;
+    import flash.display.BitmapData;
+    import flash.display.BlendMode;
+    import flash.geom.Vector3D;
+    import flash.text.TextField;
     import flash.utils.ByteArray;
+    
+    import away3d.animators.ParticleAnimationSet;
+    import away3d.animators.ParticleAnimator;
+    import away3d.animators.data.ParticleProperties;
+    import away3d.animators.data.ParticlePropertiesMode;
+    import away3d.animators.nodes.ParticleBillboardNode;
+    import away3d.animators.nodes.ParticleVelocityNode;
+    import away3d.core.base.Geometry;
+    import away3d.entities.Mesh;
+    import away3d.entities.Sprite3D;
+    import away3d.materials.TextureMaterial;
+    import away3d.primitives.PlaneGeometry;
+    import away3d.tools.helpers.ParticleGeometryHelper;
+    import away3d.utils.Cast;
     
     import durian.actSpr.structs.CACT;
     import durian.actTpc.ActTpcView;
@@ -15,6 +32,7 @@ package
     import robotlegs.bender.extensions.contextView.ContextView;
     import robotlegs.bender.framework.impl.Context;
     
+    import starling.animation.IAnimatable;
     import starling.display.DisplayObject;
     import starling.textures.TextureAtlas;
     
@@ -22,6 +40,15 @@ package
     public class DurianDemo extends DurianMainSprite
     {
         protected var _viewList:Vector.<DisplayObject>;
+        
+        protected var _particleAnimationSet:ParticleAnimationSet;
+        
+        protected var _particleAnimator:ParticleAnimator;
+        
+        protected var _particleMesh:Mesh;
+        
+        [Embed(source="blue.png")]
+        protected var ParticleImg:Class;
         
         public function DurianDemo()
         {
@@ -78,7 +105,7 @@ package
             var cact:CACT = new CACT( zipMgr.getFileFromZip( ResTable.ACT_ZIP , ResTable.MONSTER_PORING_ACT ));
             
             var count:int = 0;
-            while( count < 100 )
+            while( count < 200 )
             {
                 newActTpcView( cact , ResTable.MONSTER_TEXTURE_001 , textureAtlas );
                 count++;
@@ -93,6 +120,59 @@ package
             //            aniDisplay.updateAnimation( textureAtlas );
             //            _starlingMain.addChild( aniDisplay );
             //            _viewList.push( aniDisplay );
+            
+            //            initGround();
+            //            initParticles();
+        }
+        
+        private function initGround():void
+        {
+            var text:TextField = new TextField();  
+            text.text = "怪物名字";  
+            var textBmpData:BitmapData = new BitmapData(64,16);  
+            textBmpData.draw(text);  
+            var textMaterial:TextureMaterial = new TextureMaterial(Cast.bitmapTexture(textBmpData));  
+            var sprite3D:Sprite3D = new Sprite3D(textMaterial,64,16);  
+            sprite3D.y = 150;  
+            sprite3D.scale(10);  
+            _away3dView.scene.addChild(sprite3D);  
+        }
+        
+        protected function initParticles():void
+        {
+            var plane:Geometry = new PlaneGeometry(10, 10, 1, 1, false);
+            var geometrySet:Vector.<Geometry> = new Vector.<Geometry>();
+            for (var i:int = 0; i < 20000; i++)
+                geometrySet.push(plane);
+            
+            //setup the particle animation set
+            _particleAnimationSet = new ParticleAnimationSet(true, true);
+            _particleAnimationSet.addAnimation(new ParticleBillboardNode());
+            _particleAnimationSet.addAnimation(new ParticleVelocityNode(ParticlePropertiesMode.LOCAL_STATIC));
+            _particleAnimationSet.initParticleFunc = initParticleFunc;
+            
+            //setup the particle material
+            var material:TextureMaterial = new TextureMaterial(Cast.bitmapTexture(ParticleImg));
+            material.blendMode = BlendMode.ADD;
+            
+            //setup the particle animator and mesh
+            _particleAnimator = new ParticleAnimator(_particleAnimationSet);
+            _particleMesh = new Mesh(ParticleGeometryHelper.generateGeometry(geometrySet), material);
+            _particleMesh.animator = _particleAnimator;
+            _away3dView.scene.addChild(_particleMesh);
+            
+            //start the animation
+            _particleAnimator.start();
+        }
+        
+        protected function initParticleFunc(prop:ParticleProperties):void
+        {
+            prop.startTime = Math.random()*5 - 5;
+            prop.duration = 5;
+            var degree1:Number = Math.random() * Math.PI ;
+            var degree2:Number = Math.random() * Math.PI * 2;
+            var r:Number = Math.random() * 50 + 400;
+            prop[ParticleVelocityNode.VELOCITY_VECTOR3D] = new Vector3D(r * Math.sin(degree1) * Math.cos(degree2), r * Math.cos(degree1) * Math.cos(degree2), r * Math.sin(degree2));
         }
         
         private function newActTpcView( cact:CACT , resId:String , textureAtlas:TextureAtlas ):ActTpcView
@@ -111,29 +191,33 @@ package
             viewObj.initTpc( resId , textureAtlas );
             viewObj.counterTargetRate = 0.15;
             viewObj.loop = true;
-            viewObj.stateIndex = 8;
+            viewObj.stateIndex = Math.random() * 60;
             _starlingMain.addChild( viewObj );
             _viewList.push( viewObj );
             return viewObj;
         }
         
-        override protected function onEnterFrame(e:Event):Number
+        override public function tick(delta:Number):void
         {
-            var delta:Number = super.onEnterFrame( e ); 
-            
             if( _viewList )
             {
                 var i:int = 0;
                 while( i < _viewList.length )
                 {
                     _viewList[i].x = 50 + ( i % 20 ) * 40;
-                    _viewList[i].y = 50 + int( i / 20 ) * 40;
-                    ( _viewList[i] as ITickable ).tick( delta );
+                    _viewList[i].y = 150 + int( i / 20 ) * 40;
+                    
+                    if( _viewList[i] as ITickable )
+                    {
+                        ( _viewList[i] as ITickable ).tick( delta );
+                    }
+                    else if( _viewList[i] as IAnimatable )
+                    {
+                        ( _viewList[i] as IAnimatable ).advanceTime( delta );
+                    }
                     i++;
                 }
             }
-            
-            return delta;
         }
     }
 }
