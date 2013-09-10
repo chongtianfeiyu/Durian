@@ -2,6 +2,7 @@ package
 {
     import flash.display.Sprite;
     import flash.events.Event;
+    import flash.events.IEventDispatcher;
     
     import away3d.containers.View3D;
     import away3d.controllers.HoverController;
@@ -12,6 +13,7 @@ package
     
     import durian.interfaces.IDisplayMgr;
     import durian.interfaces.ITextureMgr;
+    import durian.interfaces.IUIMgr;
     import durian.interfaces.IZipMgr;
     import durian.starling.StarlingMain;
     
@@ -31,10 +33,16 @@ package
         public var displayMgr:IDisplayMgr;
         
         [Inject]
+        public var uiMgr:IUIMgr;
+        
+        [Inject]
         public var zipMgr:IZipMgr; 
         
         [Inject]
         public var textureMgr:ITextureMgr;
+        
+        [Inject]
+        public var eventDispatcher:IEventDispatcher;
         
         /**
          * robotlegs context 

@@ -1,11 +1,11 @@
-package durian.robotlegs.extensions.zipMgrExtension
+package durian.robotlegs.extensions.uiMgrExtension
 {
-    import durian.interfaces.IZipMgr;
+    import durian.interfaces.IUIMgr;
     
     import robotlegs.bender.framework.api.IContext;
     import robotlegs.bender.framework.api.IExtension;
     
-    public class ZipMgrExtension implements IExtension
+    public class UIMgrExtension implements IExtension
     {
         /*============================================================================*/
         /* Private Properties                                                         */
@@ -27,7 +27,7 @@ package durian.robotlegs.extensions.zipMgrExtension
         public function extend(context:IContext):void
         {
             _context = context;
-            _context.injector.map(IZipMgr).toSingleton(ZipMgr);
+            _context.injector.map(IUIMgr).toSingleton(UIMgr);
             _context.beforeInitializing(configureLifecycleEventRelay);
             _context.afterDestroying(destroyLifecycleEventRelay);
         }

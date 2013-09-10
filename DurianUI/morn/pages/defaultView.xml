@@ -1,4 +1,4 @@
 <View sceneWidth="960" sceneHeight="640" sceneColor="0xffffff" sceneBg="" layers="2,1,1,0,uiLayer">
-  <Button label="login" skin="png.component.button" x="550" y="309" layer="2"/>
+  <Button label="login" skin="png.component.button" x="550" y="309" layer="2" var="loginBtn" name="loginBtn"/>
   <TextInput skin="png.component.textinput" x="416" y="309" layer="2"/>
 </View>

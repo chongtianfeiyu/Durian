@@ -13,8 +13,6 @@ package durian.robotlegs.extensions.textureMgrExtension
         
         private var _context:IContext;
         
-        private var _textureMgr:ITextureMgr;
-        
         /*============================================================================*/
         /* Constructor                                                                */
         /*============================================================================*/

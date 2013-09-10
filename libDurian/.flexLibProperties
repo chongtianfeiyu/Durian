@@ -522,8 +522,8 @@
     <classEntry path="durian.robotlegs.extensions.displayMgrExtension.DisplayMgrExtension"/>
     <classEntry path="durian.robotlegs.extensions.keyMgrExtension.KeyMgr"/>
     <classEntry path="durian.robotlegs.extensions.keyMgrExtension.KeyMgrExtension"/>
-    <classEntry path="durian.robotlegs.extensions.textureMgrExtension.TextureMgr"/>
-    <classEntry path="durian.robotlegs.extensions.textureMgrExtension.TextureMgrExtension"/>
+    <classEntry path="durian.robotlegs.extensions.textureMgrExtension.UIMgr"/>
+    <classEntry path="durian.robotlegs.extensions.textureMgrExtension.UIMgrExtension"/>
     <classEntry path="durian.robotlegs.extensions.zipMgrExtension.ZipMgr"/>
     <classEntry path="durian.robotlegs.extensions.zipMgrExtension.ZipMgrExtension"/>
     <classEntry path="durian.starling.StarlingMain"/>
@@ -937,6 +937,9 @@
     <classEntry path="starling.utils.getNextPowerOfTwo"/>
     <classEntry path="starling.utils.rad2deg"/>
     <classEntry path="starling.utils.transformCoords"/>
+    <classEntry path="ConfigData"/>
+    <classEntry path="durian.interfaces.IViewFactory"/>
+    <classEntry path="durian.events.GameEvent"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

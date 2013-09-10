@@ -13,8 +13,6 @@ package durian.robotlegs.extensions.displayMgrExtension
         
         private var _context:IContext;
         
-        private var _displayMgr:IDisplayMgr;
-        
         /*============================================================================*/
         /* Constructor                                                                */
         /*============================================================================*/

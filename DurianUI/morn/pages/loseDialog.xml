@@ -1,0 +1,5 @@
+<Dialog sceneWidth="469" sceneHeight="330" sceneColor="0xffffff" sceneBg="" layers="1,1,0,0,第 1 层">
+  <Image url="png.towerDefense.loseBg" x="0" y="0" layer="1" mouseChildren="false" mouseEnabled="false"/>
+  <Button skin="png.towerDefense.btn_again" x="127" y="168" layer="1"/>
+  <Button skin="png.towerDefense.btn_choose" x="127" y="88" layer="1"/>
+</Dialog>

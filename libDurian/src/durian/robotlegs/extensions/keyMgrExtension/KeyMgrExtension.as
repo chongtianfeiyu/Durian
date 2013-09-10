@@ -14,8 +14,6 @@ package durian.robotlegs.extensions.keyMgrExtension
         
         private var _context:IContext;
         
-        private var _keyMgr:IKeyMgr;
-        
         /*============================================================================*/
         /* Constructor                                                                */
         /*============================================================================*/

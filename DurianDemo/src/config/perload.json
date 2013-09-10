@@ -1,4 +1,7 @@
 {"perload":[
-    {"resId":"data/cursors.act"},
-    {"resId":"data/cursors.tpc"}
+    {"url":"assets/component.swf" , "type":"0" },
+    {"url":"assets/towerDefense.swf" , "type":"0" },
+    {"url":"data/monsters001.atf" , "type":"5" },
+    {"url":"data/monsters001.xml" , "type":"3" },
+    {"url":"data/act.zip" , "type":"5" }
 ]}
