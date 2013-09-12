@@ -1,5 +1,7 @@
 package
 {
+    import durian.info.UserInfo;
+    import durian.interfaces.IUserInfo;
     import durian.interfaces.IViewFactory;
     
     import robotlegs.bender.framework.api.IConfig;
@@ -12,6 +14,7 @@ package
         
         public function configure():void
         {
+            injector.map(IUserInfo).toSingleton(UserInfo);
             injector.map(IViewFactory).toSingleton(ViewFactory);
         }
     }

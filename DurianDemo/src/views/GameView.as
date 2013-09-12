@@ -5,6 +5,7 @@ package views
     
     import durian.events.GameEvent;
     import durian.events.UserInfoEvent;
+    import durian.interfaces.IUserInfo;
     
     import game.ui.gameViewUI;
     
@@ -13,8 +14,8 @@ package views
         [Inject]
         public var eventDispatcher:IEventDispatcher;
         
-//        [Inject]
-//        public var userModel:IUserModel;
+        [Inject]
+        public var userInfo:IUserInfo;
         
         public function GameView()
         {
@@ -27,7 +28,7 @@ package views
         
         private function onChangeUserInfo( e:UserInfoEvent ):void
         {
-//            this.txtCoin.text = userModel.info.zeny.toString();
+            this.txtCoin.text = userInfo.zeny.toString();
         }
         
         protected function onDown( e:MouseEvent):void
@@ -37,22 +38,21 @@ package views
         
         private function onRestart( e:GameEvent ):void
         {
-//            this.txtCoin.text = userModel.info.zeny.toString();
-//            this.speedBtn.selected = false;
+            this.txtCoin.text = userInfo.zeny.toString();
+            this.speedBtn.selected = false;
         }
         
         protected function onSpeed( e:MouseEvent):void
         {
-//            dispatchEvent( new GameEvent( GameEvent.SPEED ));
-//            e.stopImmediatePropagation();
+            dispatchEvent( new GameEvent( GameEvent.SPEED , [] ));
+            e.stopImmediatePropagation();
         }
         
         public function initialize():void
         {
-//            var userInfo:UserInfo = userModel.info as UserInfo;
-//            this.txtCoin.text = userInfo.zeny.toString();
-//            userModel.info.addEventListener( UserInfoEvent.USER_INFO_CHANGE , onChangeUserInfo );
-//            addContextListener( GameEvent.RESTART , onRestart );
+            this.txtCoin.text = userInfo.zeny.toString();
+            userInfo.addEventListener( UserInfoEvent.USER_INFO_CHANGE , onChangeUserInfo );
+            eventDispatcher.addEventListener( GameEvent.RESTART , onRestart );
         }
         
         protected function onMenu( e:MouseEvent):void

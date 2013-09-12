@@ -1,11 +1,17 @@
 package views
 {
+    import flash.events.IEventDispatcher;
     import flash.events.MouseEvent;
+    
+    import durian.events.GameEvent;
     
     import game.ui.menuDialogUI;
     
     public class MenuDialog extends menuDialogUI
     {
+        [Inject]
+        public var eventDispatcher:IEventDispatcher;
+        
         public function MenuDialog()
         {
             super();
@@ -21,15 +27,15 @@ package views
         
         protected function onRestart( e:MouseEvent):void
         {
-//            e.stopImmediatePropagation();
-//            dispatchEvent( new GameEvent( GameEvent.RESTART ));
-//            this.remove();
+            e.stopImmediatePropagation();
+            eventDispatcher.dispatchEvent( new GameEvent( GameEvent.RESTART , [] ));
+            this.remove();
         }
         
         protected function onContinue( e:MouseEvent):void
         {
-//            e.stopImmediatePropagation();
-//            dispatchEvent( new GameEvent( GameEvent.CONTINUE ));
+            e.stopImmediatePropagation();
+            eventDispatcher.dispatchEvent( new GameEvent( GameEvent.CONTINUE , [] ));
         }
     }
 }

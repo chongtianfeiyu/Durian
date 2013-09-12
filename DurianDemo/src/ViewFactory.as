@@ -4,6 +4,7 @@ package
     
     import morn.core.components.View;
     
+    import robotlegs.bender.extensions.contextView.ContextView;
     import robotlegs.bender.framework.api.IInjector;
     
     import views.ChooseView;
@@ -15,6 +16,9 @@ package
     {
         [Inject]
         public var injector:IInjector;
+        
+        [Inject]
+        public var contextView:ContextView;
         
         public function ViewFactory()
         {
@@ -43,14 +47,18 @@ package
                 case UIConsts.MENU_VIEW:
                 {
                     view = new MenuDialog();
-                    view.x = view.width / 2;
-                    view.y = view.height / 2
+                    view.x = contextView.view.stage.width / 2 - view.width / 2
+                    view.y = contextView.view.stage.height / 2 - view.height / 2
                     break;
                 }
             }
             if( view )
             {
                 injector.injectInto( view );
+                if( view.hasOwnProperty( "initialize" ) )
+                {
+                    view["initialize"]();
+                }
             }
             return view;
         }

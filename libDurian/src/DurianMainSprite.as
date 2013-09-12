@@ -14,6 +14,7 @@ package
     import durian.interfaces.IDisplayMgr;
     import durian.interfaces.ITextureMgr;
     import durian.interfaces.IUIMgr;
+    import durian.interfaces.IUserInfo;
     import durian.interfaces.IZipMgr;
     import durian.starling.StarlingMain;
     
@@ -44,6 +45,9 @@ package
         [Inject]
         public var eventDispatcher:IEventDispatcher;
         
+        [Inject]
+        public var userInfo:IUserInfo;
+        
         /**
          * robotlegs context 
          */        
@@ -72,6 +76,10 @@ package
          * away3d
          */        
         protected var _away3dView:View3D;
+        /**
+         *  
+         */        
+        protected var _awar3DStats:AwayStats;
         
         /**
          * construct
@@ -114,7 +122,8 @@ package
             _away3dView.shareContext = true;
             var hoverController:HoverController = new HoverController(_away3dView.camera, null, 45, 30, 1200, 5, 89.999);
             addChild(_away3dView);
-            addChild(new AwayStats(_away3dView));
+            _awar3DStats = new AwayStats( _away3dView );
+            addChild( _awar3DStats );
         }
         
         protected function initStarling():void

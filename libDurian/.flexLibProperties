@@ -940,6 +940,7 @@
     <classEntry path="ConfigData"/>
     <classEntry path="durian.interfaces.IViewFactory"/>
     <classEntry path="durian.events.GameEvent"/>
+    <classEntry path="durian.info.UserInfo"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

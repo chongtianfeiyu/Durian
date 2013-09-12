@@ -76,6 +76,8 @@ package
             ConfigData.parse( App.loader.getResLoaded( ResTable.CONFIG ) );
             logger.debug( ConfigData.DEFUALT_VIEW );
             
+            userInfo.zeny = 1000;
+            
             var perloadObj:Object = JSON.parse( App.loader.getResLoaded( ResTable.PERLOAD ) );
             var perloadList:Array = perloadObj.perload;
             
@@ -113,7 +115,13 @@ package
         
         private function onMenu( e:GameEvent ):void
         {
+            eventDispatcher.addEventListener( GameEvent.CONTINUE , onContinue );
             uiMgr.show( UIConsts.MENU_VIEW );
+        }
+        
+        private function onContinue( e:GameEvent ):void
+        {
+            uiMgr.hide( UIConsts.MENU_VIEW );
         }
         
         //            var data:ByteArray = App.loader.getResLoaded( ResTable.MONSTER_TEXTURE_001 );
