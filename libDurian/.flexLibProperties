@@ -502,11 +502,10 @@
     <classEntry path="durian.actTpc.ActTpcPlayerView"/>
     <classEntry path="durian.actTpc.ActTpcView"/>
     <classEntry path="durian.actTpc.ActTpcWeaponView"/>
-    <classEntry path="durian.display.Animation"/>
+    <classEntry path="durian.display.texture.BitmapAnimation"/>
     <classEntry path="durian.display.IAnimation"/>
     <classEntry path="durian.display.IMultiStateAnimation"/>
-    <classEntry path="durian.display.MultiAnimation"/>
-    <classEntry path="durian.display.MultiStateAnimaiton"/>
+    <classEntry path="durian.display.texture.MultiBitmapAnimation"/>
     <classEntry path="durian.events.ActSprEvent"/>
     <classEntry path="durian.events.ActTpcEvent"/>
     <classEntry path="durian.events.UserInfoEvent"/>
@@ -542,7 +541,6 @@
     <classEntry path="feathers.controls.ImageLoader"/>
     <classEntry path="feathers.controls.Label"/>
     <classEntry path="feathers.controls.LayoutGroup"/>
-    <classEntry path="feathers.controls.List"/>
     <classEntry path="feathers.controls.NumericStepper"/>
     <classEntry path="feathers.controls.PageIndicator"/>
     <classEntry path="feathers.controls.Panel"/>
@@ -877,11 +875,8 @@
     <classEntry path="robotlegs.bender.framework.impl.safelyCallBack"/>
     <classEntry path="starling.animation.DelayedCall"/>
     <classEntry path="starling.animation.IAnimatable"/>
-    <classEntry path="starling.animation.Juggler"/>
     <classEntry path="starling.animation.Transitions"/>
-    <classEntry path="starling.animation.Tween"/>
     <classEntry path="starling.core.RenderSupport"/>
-    <classEntry path="starling.core.Starling"/>
     <classEntry path="starling.core.StatsDisplay"/>
     <classEntry path="starling.core.starling_internal"/>
     <classEntry path="starling.display.BlendMode"/>
@@ -941,6 +936,8 @@
     <classEntry path="durian.interfaces.IViewFactory"/>
     <classEntry path="durian.events.GameEvent"/>
     <classEntry path="durian.info.UserInfo"/>
+    <classEntry path="durian.display.bitmap.BitmapDataAtlas"/>
+    <classEntry path="durian.network.DurianHttp"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

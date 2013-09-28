@@ -1,4 +1,17 @@
 <View sceneWidth="960" sceneHeight="640" sceneColor="0xffffff" sceneBg="" layers="2,1,1,0,uiLayer">
-  <Button label="login" skin="png.component.button" x="550" y="309" layer="2" var="loginBtn" name="loginBtn"/>
-  <TextInput skin="png.component.textinput" x="416" y="309" layer="2"/>
+  <Image url="png.component.blank" x="89" y="188" layer="2" width="761" height="254"/>
+  <Button label="login" skin="png.component.button" x="338" y="247" layer="2" var="loginBtn" name="loginBtn"/>
+  <TextInput skin="png.component.textinput" x="199" y="247" layer="2" var="txtLoginUser" name="txtLoginUser"/>
+  <Button label="register" skin="png.component.button" x="686" y="247" layer="2" var="regBtn" name="regBtn"/>
+  <TextInput skin="png.component.textinput" x="199" y="279" layer="2" var="txtLoginPass" name="txtLoginPass"/>
+  <TextInput skin="png.component.textinput" x="547" y="247" layer="2" var="txtRegUser" name="txtRegUser"/>
+  <TextInput skin="png.component.textinput" x="547" y="279" layer="2" var="txtRegPass" name="txtRegPass"/>
+  <TextInput skin="png.component.textinput" x="547" y="311" layer="2" var="txtRegPassConfirm" name="txtRegPassConfirm"/>
+  <TextInput skin="png.component.textinput" x="547" y="343" layer="2" var="txtRegEmail" name="txtRegEmail"/>
+  <Label text="username" x="129" y="250" layer="2"/>
+  <Label text="password" x="131" y="278" layer="2"/>
+  <Label text="username" x="476" y="251" layer="2"/>
+  <Label text="email" x="502" y="344" layer="2"/>
+  <Label text="confirm password" x="434" y="313" layer="2"/>
+  <Label text="password" x="478" y="282" layer="2"/>
 </View>

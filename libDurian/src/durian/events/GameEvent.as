@@ -4,6 +4,7 @@ package durian.events
     
     public class GameEvent extends Event
     {
+        public static const REGISTER:String = "GameEvent.REGISTER";
         public static const LOGIN:String = "GameEvent.LOGIN";
         public static const CHOOSE:String = "GameEvent.CHOOSE";
         public static const MENU:String = "GameEvent.MENU";

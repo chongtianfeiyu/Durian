@@ -1,6 +1,9 @@
-package durian.display
+package durian.display.texture
 {
     import flash.geom.Point;
+    
+    import durian.display.IAnimation;
+    import durian.display.bitmap.BitmapDataAtlas;
     
     import starling.display.Sprite;
     import starling.textures.TextureAtlas;
@@ -9,30 +12,30 @@ package durian.display
      * player multi textureList animation
      * @author inoah
      */    
-    public class MultiAnimation extends Sprite implements IAnimation
+    public class MultiTextureAnimation extends Sprite implements IAnimation
     {
         protected var _nameList:Vector.<String>;
         protected var _posList:Vector.<Point>;
         
-        protected var _animationList:Vector.<Animation>;
+        protected var _animationList:Vector.<TextureAnimation>;
         
         protected var _couldTick:Boolean;
         
-        public function MultiAnimation( nameList:Vector.<String> , posList:Vector.<Point> = null )
+        public function MultiTextureAnimation( nameList:Vector.<String> , posList:Vector.<Point> = null )
         {
             _nameList = nameList;
             _posList = posList;
-            _animationList = new Vector.<Animation>();
+            _animationList = new Vector.<TextureAnimation>();
         }
         
-        public function updateAnimation( textureAtlas:TextureAtlas ):void
+        public function updateAnimation( textureAtlas:TextureAtlas = null , bitmapDataAtlas:BitmapDataAtlas = null  ):void
         {
             _couldTick = false;
             
             var len:int = _nameList.length;
             for( var i:int = 0;i<len;i++ )
             {
-                _animationList[i] = new Animation( _nameList[i] );
+                _animationList[i] = new TextureAnimation( _nameList[i] );
                 _animationList[i].loop = true;
                 _animationList[i].updateAnimation( textureAtlas );
                 if( _posList.length > i )

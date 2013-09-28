@@ -1,16 +1,17 @@
-package durian.display
+package durian.display.texture
 {
+    import durian.display.IMultiStateAnimation;
     import durian.events.ActTpcEvent;
     
     import starling.textures.Texture;
 
-    public class MultiStateAnimaiton extends Animation implements IMultiStateAnimation
+    public class MultiStateTextureAnimaiton extends TextureAnimation implements IMultiStateAnimation
     {
         protected var _stateIndex:uint;
         
         protected var _animationConfig:Vector.<Vector.<String>>;
         
-        public function MultiStateAnimaiton( name:String )
+        public function MultiStateTextureAnimaiton( name:String )
         {
             super(name);
             _animationConfig = new Vector.<Vector.<String>>();

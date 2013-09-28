@@ -1,12 +1,13 @@
 package durian.display
 {
+    import durian.display.bitmap.BitmapDataAtlas;
     import durian.interfaces.ITickable;
     
     import starling.textures.TextureAtlas;
 
     public interface IAnimation extends ITickable
     {
-        function updateAnimation( textureAtlas:TextureAtlas ):void
+        function updateAnimation( textureAtlas:TextureAtlas = null , bitmapDataAtlas:BitmapDataAtlas = null ):void
         function get counterTargetRate():Number;
         function get currentFrame():uint;
         function set currentFrame( value:uint ):void;

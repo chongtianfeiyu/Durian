@@ -5,13 +5,13 @@ package durian.actTpc
     import durian.actSpr.structs.CACT;
     import durian.actSpr.structs.acth.AnyActAnyPat;
     import durian.actSpr.structs.acth.AnyPatSprV0101;
-    import durian.display.MultiStateAnimaiton;
+    import durian.display.texture.MultiStateTextureAnimaiton;
     import durian.events.ActTpcEvent;
     
     import starling.textures.Texture;
     import starling.textures.TextureAtlas;
     
-    public class ActTpcView extends MultiStateAnimaiton
+    public class ActTpcView extends MultiStateTextureAnimaiton
     {
         protected static const NULL_TEXTURE:Texture = Texture.fromBitmapData(new BitmapData(1,1,true,0));
         

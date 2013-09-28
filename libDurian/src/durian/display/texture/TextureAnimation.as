@@ -1,7 +1,9 @@
-package durian.display
+package durian.display.texture
 {
     import flash.display.BitmapData;
     
+    import durian.display.IAnimation;
+    import durian.display.bitmap.BitmapDataAtlas;
     import durian.events.ActTpcEvent;
     import durian.utils.Counter;
     
@@ -15,7 +17,7 @@ package durian.display
      * player textureList animation
      * @author inoah
      */    
-    public class Animation extends Sprite implements IAnimation
+    public class TextureAnimation extends Sprite implements IAnimation
     {
         protected static const NULL_TEXTURE:Texture = Texture.fromBitmapData(new BitmapData(1,1,true,0));
         
@@ -41,7 +43,7 @@ package durian.display
         
         protected var _name:String;
         
-        public function Animation( name:String )
+        public function TextureAnimation( name:String )
         {
             _name = name;
             _counter = new Counter();
@@ -49,7 +51,7 @@ package durian.display
             _counterTarget = _baseCounterTarget;
         }
         
-        public function updateAnimation( textureAtlas:TextureAtlas ):void
+        public function updateAnimation( textureAtlas:TextureAtlas = null , bitmapDataAtlas:BitmapDataAtlas = null  ):void
         {
             _couldTick = false;
             

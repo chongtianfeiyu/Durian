@@ -184,3 +184,13 @@ Email: 234082230@qq.com
 MSN: noahwang@live.cn
 
 QQ: 234082230
+
+Durian版本分支说明
+
+Durian github为公开版本，包含libDurian，DurianDemo，DurianUI
+
+Durian bitbucket为私有版本，包含所有github上的代码和DurianEditor，DurianEditorUI
+
+私有版本上不可更改libDurian，DurianDemo，DurianUI。
+
+开发时引用github中的libDurian工程。
